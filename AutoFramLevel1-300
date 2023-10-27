@@ -1,4 +1,3 @@
-_G.AutoFram = true
 function totarget(p)
 		if _G.AutoFram then
 			local Distance2 = (p.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
