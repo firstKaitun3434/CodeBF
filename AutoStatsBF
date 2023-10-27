@@ -1,0 +1,103 @@
+spawn(function()
+	local le = game:GetService("Players").LocalPlayer.Data.Level.Value
+	if le == 1 or le <= 816 then
+        _G.loop = false;
+        while _G.loop do wait()
+        local args = {
+            [1] = "AddPoint",
+            [2] = "Defense",
+            [3] = 1
+        }
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+        end
+            _G.loop = true
+            while _G.loop do wait()
+            local args = {
+                [1] = "AddPoint",
+                [2] = "Melee",
+                [3] = 1
+            }
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+            end
+                _G.loop = false;
+                while _G.loop do wait()
+                local args = {
+                    [1] = "AddPoint",
+                    [2] = "Demon Fruit",
+                    [3] = 1
+                }
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                end
+else
+    if le == 817 or le <= 1634 then
+        _G.loop = true;
+        while _G.loop do wait()
+        local args = {
+            [1] = "AddPoint",
+            [2] = "Defense",
+            [3] = 1
+        }
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+        end
+            _G.loop = false
+            while _G.loop do wait()
+            local args = {
+                [1] = "AddPoint",
+                [2] = "Melee",
+                [3] = 1
+            }
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+            end
+                _G.loop = false;
+                while _G.loop do wait()
+                local args = {
+                    [1] = "AddPoint",
+                    [2] = "Demon Fruit",
+                    [3] = 1
+                }
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                end
+else
+    if le == 1635 or le <= 2043 then
+        _G.loop = false;
+        while _G.loop do wait()
+        local args = {
+            [1] = "AddPoint",
+            [2] = "Defense",
+            [3] = 1
+        }
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+        end
+            _G.loop = false;
+            while _G.loop do wait()
+            local args = {
+                [1] = "AddPoint",
+                [2] = "Melee",
+                [3] = 1
+            }
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+            end
+                _G.loop = true;
+                while _G.loop do wait()
+                local args = {
+                    [1] = "AddPoint",
+                    [2] = "Demon Fruit",
+                    [3] = 1
+                }
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                end
+    if le == 2044 or le <= 2450 then
+        _G.loop = true;
+        while _G.loop do wait()
+            local args = {
+                [1] = "AddPoint",
+                [2] = "Sword",
+                [3] = 1
+            }
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+        end
+                end
+            end
+        end
+    end
+end)
