@@ -1,0 +1,37 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bot HUB", "Synapse")
+local Tab = Window:NewTab("Fram")
+local Section = Tab:NewSection("\\ Fram //")
+Section:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
+        _G.AutoFram = true
+    else
+        _G.AutoFram = false
+    end
+end)
+--
+Weapon = {}
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren())
+    table.insert(Weapon,v.Name)
+end
+Section:NewDropdown("Weapon", "", Weapon, function(abc)
+    select = abc
+end)
+Section:NewButton("ResetWeapon", "ButtonInfo", function()
+    table.Clear(Weapon)
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren())
+        table.insert(Weapon,v.Name)
+    end
+end)
+Section:NewToggle("AutoEpiue", "ToggleInfo", function(state)
+    if state then
+        _G.AutoEpiue = true
+    else
+        _G.AutoEpiue = false
+    end
+end)
+spawn(function ()
+    while _G.AutoEpiue do wait()
+        game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v.Name))
+    end
+end)
