@@ -260,23 +260,22 @@ spawn(function()
 			if _G.AutoFram then
 				checklevel()
 				if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
-					if game:GetService("Players").localPlayer.PlayerGui.Main.Quest.Visible == true then
-                        totarget(CFramePuk)
+					totarget(CFramePuk)
+                    wait(1)
+                    if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
+                        totarget(CFramePuk2)
                         wait(1)
                         if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
-                            if game:GetService("Players").localPlayer.PlayerGui.Main.Quest.Visible == true then
-                                totarget(CFramePuk2)
+                            totarget(CFramePuk3)
+                            wait(1)
+                            if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
+                                totarget(CFramePuk4)
                                 wait(1)
                                 if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
-                                    if game:GetService("Players").localPlayer.PlayerGui.Main.Quest.Visible == true then
-                                        totarget(CFramePuk3)
-                                        wait(1)
-                                        if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
-                                            if game:GetService("Players").localPlayer.PlayerGui.Main.Quest.Visible == true then
-                                                totarget(CFramePuk4)
-                                                wait(1)
-                                            end
-                                        end
+                                    totarget(CFramePuk1)
+                                    wait(1)
+                                    if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
+                                        totarget(CFramePuk2)
                                     end
                                 end
                             end
@@ -286,7 +285,7 @@ spawn(function()
 			end
 		end)
 	end
-end)
+end
 spawn(function()
 	while task.wait() do
 		pcall(function()
