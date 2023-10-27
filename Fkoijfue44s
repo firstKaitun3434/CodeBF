@@ -11,7 +11,7 @@ Section:NewToggle("ToggleText", "ToggleInfo", function(state)
 end)
 --
 Weapon = {}
-for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren())
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
     table.insert(Weapon,v.Name)
 end
 Section:NewDropdown("Weapon", "", Weapon, function(abc)
@@ -19,7 +19,7 @@ Section:NewDropdown("Weapon", "", Weapon, function(abc)
 end)
 Section:NewButton("ResetWeapon", "ButtonInfo", function()
     table.Clear(Weapon)
-    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren())
+    for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
         table.insert(Weapon,v.Name)
     end
 end)
