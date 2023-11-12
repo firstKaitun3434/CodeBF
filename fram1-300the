@@ -1,4 +1,4 @@
-_G.AutoFram = true -- true/false
+_G.AutoFram = true
 function totarget(p)
 		if _G.AutoFram then
 			local Distance2 = (p.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
@@ -168,14 +168,13 @@ spawn(function()
                 checklevel()
                 if game:GetService("Players").localPlayer.PlayerGui.Main.Quest.Visible == false then
                     totarget(CFrameQuest)
-                    if game.Players.localPlayer.Character.HumanoidRootPart.CFrame - CFrameQuest <= 75 or game.Players.localPlayer.Character.HumanoidRootPart.CFrame - CFrameQuest <= -75 then
-                        local args = {
-                            [1] = "StartQuest",
-                            [2] = QuestName,
-                            [3] = QuestNumber
-                        }
-                        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-                    end
+                    wait(1)
+                    local args = {
+                        [1] = "StartQuest",
+                        [2] = QuestName,
+                        [3] = QuestNumber
+                    }
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
                 end
             end
         end)
