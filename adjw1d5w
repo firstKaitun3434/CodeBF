@@ -1,5 +1,0 @@
-if Key == "BotHubKey-df025" or "BotHubKey-wl5w9" then
-  print("true")
-else
-  print("false")
-end
