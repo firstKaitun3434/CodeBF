@@ -97,11 +97,13 @@ spawn(function()
                     for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                         for x,y in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                             if v.Name == Mon and y.Name == Mon then
-                                v.HumanoidRootPart.CFrame = y.HumanoidRootPart.CFrame
+                                y.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Anchored = false
                                 v.HumanoidRootPart.Size = Vector3.new(20,50,20)
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/BotHub-scrip/BotHub-Scrip/main/Simulation"))()
+                                if sethiddenproperty then
+                                sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+                                end
                                 Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                 if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 50 then
                                     getfenv().Attack = true
@@ -147,7 +149,12 @@ spawn(function()
     loop:Connect(function()
         if getfenv().AutoFram then
             pcall(function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/BotHub-scrip/BotHub-Scrip/main/FastAttack"))()
+                local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+                local activeController = getupvalues(CombatFramework)[2]['activeController']
+                local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
+                Camera:Stop()
+                activeController.timeToNextAttack = 0
+                activeController.hitboxMagnitude = 50
             end)
         end
     end)
