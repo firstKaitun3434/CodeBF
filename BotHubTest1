@@ -102,7 +102,7 @@ spawn(function()
                                 v.HumanoidRootPart.Anchored = false
                                 v.HumanoidRootPart.Size = Vector3.new(20,50,20)
                                 if sethiddenproperty then
-                                sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+                                    sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
                                 end
                                 Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                 if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 50 then
@@ -111,7 +111,7 @@ spawn(function()
                                     getfenv().Attack = false
                                 end
                             else
-                                Tween(CFramePuk)
+                                getfenv().Attack = false
                             end
                         end
                     end
@@ -128,6 +128,7 @@ spawn(function()
                 for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                     if v.Name == Mon then
                         if v.Humanoid.Health == 0 then
+                            getfenv().Attack = false
                             wait(0.1)
                             v:Destroy()
                         end
@@ -139,9 +140,25 @@ spawn(function()
 end)
 spawn(function()
     loop:Connect(function()
+        if getfenv().AutoFram then
+            pcall(function()
+                CheckLevel()
+                for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+                    if v.Name ~= Mon then
+                        getfenv().Attack = false
+                        Tween(CFramePuk)
+                    end
+                end
+            end)
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
         if getfenv().Attack then
-            game:GetService'VirtualUser':CaptureController()
-            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+            getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))[2]['activeController']:attack()
+            --[[game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))]]
         end
     end)
 end)
