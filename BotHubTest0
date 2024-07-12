@@ -164,6 +164,14 @@ spawn(function()
 end)
 spawn(function()
     loop:Connect(function()
+        if getfenv().Attack then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
         if getfenv().AutoFram then
             pcall(function()
                 local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
