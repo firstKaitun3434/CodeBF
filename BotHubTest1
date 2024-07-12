@@ -34,14 +34,14 @@ function CheckLevel()
     local Level = game:GetService("Players").LocalPlayer.Data.Level.Value
     if Level < 10 then
         Mon = "Bandit"
-        LastSpawnPoint = "Default"
+        SpawnPoint = "Default"
         QuestName = "BanditQuest1"
         QuestNumber = 1
         CFrameQuest = CFrame.new(1059.9759521484375, 16.488065719604492, 1549.023193359375)
         CFramePuk = CFrame.new(1108.1478271484375, 57.41001510620117, 1623.7769775390625)
     elseif Level < 105 then
         Mon = "Monkey"
-        LastSpawnPoint = "Jungle"
+        SpawnPoint = "Jungle"
         QuestName = "JungleQuest"
         QuestNumber = 1
         CFrameQuest = CFrame.new(-1599.5264892578125, 36.977455139160156, 153.2390899658203)
