@@ -101,10 +101,10 @@ spawn(function()
                                 v.HumanoidRootPart.CanCollide = false
                                 v.HumanoidRootPart.Anchored = false
                                 v.HumanoidRootPart.Size = Vector3.new(20,50,20)
+                                Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                 if sethiddenproperty then
                                     sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
                                 end
-                                Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
                                 if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 50 then
                                     getfenv().Attack = true
                                 else
@@ -157,8 +157,6 @@ spawn(function()
     loop:Connect(function()
         if getfenv().Attack then
             getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))[2]['activeController']:attack()
-            --[[game:GetService'VirtualUser':CaptureController()
-            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))]]
         end
     end)
 end)
@@ -169,6 +167,10 @@ spawn(function()
             game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
         end
     end)
+end)
+spawn(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BotHub-scrip/BotHub-Scrip/main/Code"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/firstKaitun3434/CodeBF/main/AutoStatsBF"))()
 end)
 spawn(function()
     loop:Connect(function()
