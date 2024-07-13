@@ -1,6 +1,11 @@
+--[[
 getfenv().AutoFram = true
 getfenv().bypasstween = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/firstKaitun3434/CodeBF/main/Script"))()
+]]
 local loop = game:GetService("RunService").RenderStepped
+local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+local activeController = getupvalues(CombatFramework)[2]['activeController']
 function newpart()
     if not game.Workspace:FindFirstChild("Part01BotHub") then
         local part = Instance.new("Part",game.Workspace)
@@ -21,7 +26,7 @@ end
 function Tween(P)
     pcall(function()
         local Pos = (P.Position - game.Workspace:FindFirstChild("Part01BotHub").Position).Magnitude
-        local tween_Service = game:service"TweenService"
+        local tween_Service = game:GetService("TimerService")
         local tween_info = TweenInfo.new(Pos/360, Enum.EasingStyle.Linear)
         local Warp = tween_Service:Create(game.Workspace:FindFirstChild("Part01BotHub"), tween_info, {CFrame = P * CFrame.new(0,-5,0)})
         Warp:Play()
@@ -102,16 +107,12 @@ spawn(function()
                                 v.HumanoidRootPart.Anchored = false
                                 v.HumanoidRootPart.Size = Vector3.new(20,50,20)
                                 Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,15,0))
-                                if sethiddenproperty then
-                                    sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
-                                end
+                                sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
                                 if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 50 then
                                     getfenv().Attack = true
                                 else
                                     getfenv().Attack = false
                                 end
-                            else
-                                getfenv().Attack = false
                             end
                         end
                     end
@@ -128,7 +129,6 @@ spawn(function()
                 for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                     if v.Name == Mon then
                         if v.Humanoid.Health == 0 then
-                            getfenv().Attack = false
                             wait(0.1)
                             v:Destroy()
                         end
@@ -154,9 +154,79 @@ spawn(function()
     end)
 end)
 spawn(function()
+    pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/firstKaitun3434/CodeBF/main/AutoStatsBF"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BotHub-scrip/BotHub-Scrip/main/Code"))()
+        --loadstring(game:HttpGet("https://raw.githubusercontent.com/firstKaitun3434/CodeBF/main/noshop"))()
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().AutoFram then
+            if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, Mon) then
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
+            end
+            if not game.Players.LocalPlayer.Character.Humanoid:FindFirstChild("LeftHand_BusoLayer1") then
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Buso")
+            end
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().AutoFram then
+            pcall(function()
+                local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
+                Camera:Stop()
+                activeController.timeToNextAttack = 0
+                activeController.hitboxMagnitude = 50
+            end)
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        local args = {
+            [1] = "AddPoint",
+            [2] = "Melee",
+            [3] = 1
+        }
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+    end)
+end)
+-- Attack
+spawn(function()
     loop:Connect(function()
         if getfenv().Attack then
-            getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))[2]['activeController']:attack()
+            activeController:attack()
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().Attack then
+            activeController:attack()
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().Attack then
+            activeController:attack()
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().Attack then
+            activeController:attack()
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().Attack then
+            activeController:attack()
         end
     end)
 end)
@@ -169,20 +239,34 @@ spawn(function()
     end)
 end)
 spawn(function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BotHub-scrip/BotHub-Scrip/main/Code"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/firstKaitun3434/CodeBF/main/AutoStatsBF"))()
+    loop:Connect(function()
+        if getfenv().Attack then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+        end
+    end)
 end)
 spawn(function()
     loop:Connect(function()
-        if getfenv().AutoFram then
-            pcall(function()
-                local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-                local activeController = getupvalues(CombatFramework)[2]['activeController']
-                local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
-                Camera:Stop()
-                activeController.timeToNextAttack = 0
-                activeController.hitboxMagnitude = 50
-            end)
+        if getfenv().Attack then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().Attack then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+        end
+    end)
+end)
+spawn(function()
+    loop:Connect(function()
+        if getfenv().Attack then
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
         end
     end)
 end)
