@@ -1,13 +1,6 @@
---[[
-getfenv().AutoFram = true
-getfenv().bypasstween = true
-loadstring(game:HttpGet("https://raw.githubusercontent.com/firstKaitun3434/CodeBF/main/Script"))()
-]]
 getfenv().AutoFram = true
 getfenv().bypasstween = true
 local loop = game:GetService("RunService").RenderStepped
-local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-local activeController = getupvalues(CombatFramework)[2]['activeController']
 function newpart()
     if not game.Workspace:FindFirstChild("Part01BotHub") then
         local part = Instance.new("Part",game.Workspace)
@@ -178,6 +171,8 @@ spawn(function()
     loop:Connect(function()
         if getfenv().AutoFram then
             pcall(function()
+                local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+                local activeController = getupvalues(CombatFramework)[2]['activeController']
                 local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
                 Camera:Stop()
                 activeController.timeToNextAttack = 0
@@ -200,6 +195,8 @@ end)
 spawn(function()
     loop:Connect(function()
         if getfenv().Attack then
+            local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local activeController = getupvalues(CombatFramework)[2]['activeController']
             activeController:attack()
         end
     end)
@@ -207,6 +204,8 @@ end)
 spawn(function()
     loop:Connect(function()
         if getfenv().Attack then
+            local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local activeController = getupvalues(CombatFramework)[2]['activeController']
             activeController:attack()
         end
     end)
@@ -214,6 +213,8 @@ end)
 spawn(function()
     loop:Connect(function()
         if getfenv().Attack then
+            local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local activeController = getupvalues(CombatFramework)[2]['activeController']
             activeController:attack()
         end
     end)
@@ -221,6 +222,8 @@ end)
 spawn(function()
     loop:Connect(function()
         if getfenv().Attack then
+            local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local activeController = getupvalues(CombatFramework)[2]['activeController']
             activeController:attack()
         end
     end)
@@ -228,6 +231,8 @@ end)
 spawn(function()
     loop:Connect(function()
         if getfenv().Attack then
+            local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+            local activeController = getupvalues(CombatFramework)[2]['activeController']
             activeController:attack()
         end
     end)
