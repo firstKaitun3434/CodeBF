@@ -1,4 +1,5 @@
-
+getfenv().AutoFram = true
+getfenv().bypasstween = true
 local loop = game:GetService("RunService").RenderStepped
 function newpart()
     if not game.Workspace:FindFirstChild("Part01BotHub") then
