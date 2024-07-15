@@ -1,0 +1,440 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.299567103, 0, 0.34959349, 0)
+Frame.Size = UDim2.new(0.400000006, 0, 0.300000012, 0)
+Frame.Visible = false
+
+UICorner.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = ScreenGui
+Frame2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0.299567103, 0, 0.149593502, 0)
+Frame2.Size = UDim2.new(0.400000006, 0, 0.699999988, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.00999999978, 0)
+UICorner_2.Parent = Frame2
+
+TextButton_2.Parent = Frame2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Size = UDim2.new(1, 0, 0.0799999982, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = TextButton_2
+
+Frame_2.Parent = Frame2
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0324676633, 0, 0.111498222, 0)
+Frame_2.Size = UDim2.new(0.934631884, 0, 0.853426397, 0)
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0486337058, 0, 0.0272183288, 0)
+Frame_3.Size = UDim2.new(0.899999976, 0, 0.0972781703, 0)
+
+UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_4.Parent = Frame_3
+
+TextLabel.Parent = Frame_3
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0231588744, 0, 0.139899254, 0)
+TextLabel.Size = UDim2.new(0, 186, 0, 25)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Auto Fram"
+TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame_4.Parent = Frame_3
+Frame_4.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.851732016, 0, 0.139899254, 0)
+Frame_4.Size = UDim2.new(0.12058568, 0, 0.699496031, 0)
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = Frame_4
+
+TextLabel_2.Parent = Frame_4
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0500000007, 0, 0.0820000023, 0)
+TextLabel_2.Size = UDim2.new(0.435982257, 0, 0.838333666, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = TextLabel_2
+
+TextButton_3.Parent = Frame_4
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Size = UDim2.new(1, 0, 1, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+-- Scripts:
+
+local function EYNIX_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame .Visible = false
+		script.Parent.Parent.Frame2.Visible = true
+	end)
+end
+coroutine.wrap(EYNIX_fake_script)()
+local function JSRCIN_fake_script() -- Frame2.LocalScript 
+	local script = Instance.new('LocalScript', Frame2)
+
+	local part = script.Parent.TextButton
+	local part2 = script.Parent.Parent.Frame2
+	local ply = game.Players
+	local mouse = game:GetService("UserInputService")
+	local b
+	game:GetService("RunService").RenderStepped:Connect(function()
+		script.Parent.TextButton.MouseButton1Down:Connect(function()
+			b = (part2.Position - UDim2.new(0, mouse:GetMouseLocation().X - 600 , 0, mouse:GetMouseLocation().Y - 300))
+			_G.a = true
+		end)
+		script.Parent.TextButton.MouseButton1Up:Connect(function()
+			_G.a = false
+		end)
+	end)
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.a then
+			part2.Position = b + UDim2.new(0, mouse:GetMouseLocation().X - 600 , 0, mouse:GetMouseLocation().Y - 300)
+		end
+	end)
+end
+coroutine.wrap(JSRCIN_fake_script)()
+local function DWGLVOA_fake_script() -- Frame_4.LocalScript 
+	local script = Instance.new('LocalScript', Frame_4)
+
+	_G.AutoFram = false
+	_G.bypasstween = true
+	pcall(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/b3styskid/MAZI-API/main/SaveSettingAPI.lua'))()
+	end)
+	if Check_Setting("Bothub_"..game.Players.LocalPlayer.Name) then
+		_G.AutoFram = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["AutoFram"] or false
+		_G.AutoEquip = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["AutoEquip"] or false
+		_G.bypasstween = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["bypasstween"] or false
+		_G.AutoUpdatePoint = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["AutoUpdatePoint"] or false
+	else
+		_G.AutoFram = false
+		_G.AutoEquip = false
+		_G.bypasstween = false
+		_G.AutoUpdatePoint = false
+	end
+	game.Players.PlayerRemoving:Connect(function()
+		getgenv().Setting = {
+			["AutoFram"] = _G.AutoFram,
+			["AutoEquip"] = _G.AutoEquip,
+			["bypasstween"] = _G.bypasstween,
+			["AutoUpdatePoint"] = _G.AutoUpdatePoint,
+		}
+		Update_Setting("Bothub_"..game.Players.LocalPlayer.Name)
+	end)
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if _G.AutoFram == false then
+			script.Parent.TextLabel.Position = UDim2.new(0.5, 0,0.082, 0)
+			_G.AutoFram = true
+		else
+			script.Parent.TextLabel.Position = UDim2.new(0.05, 0,0.082, 0)
+			_G.AutoFram = false
+		end
+	end)
+	local loop = game:GetService("RunService").RenderStepped
+	function newpart()
+		if not game.Workspace:FindFirstChild("Part01BotHub") then
+			local part = Instance.new("Part",game.Workspace)
+			part.Anchored = true
+			part.Size = Vector3.new(30,1,30)
+			part.Transparency = 1
+			part.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-5,0)
+			part.Name = "Part01BotHub"
+		end
+	end
+	function Tween(P)
+		pcall(function()
+			local Pos = (P.Position - game.Workspace:FindFirstChild("Part01BotHub").Position).Magnitude
+			local tween_Service = game:service"TweenService"
+			local tween_info = TweenInfo.new(Pos/360, Enum.EasingStyle.Linear)
+			local Warp = tween_Service:Create(game.Workspace:FindFirstChild("Part01BotHub"), tween_info, {CFrame = P * CFrame.new(0,-5,0)})
+			Warp:Play()
+			if Pos <= 50 then
+				game.Workspace:FindFirstChild("Part01BotHub").CFrame = P * CFrame.new(0,-5,0)
+			end
+		end)
+	end
+	function Tweenply(P)
+		pcall(function()
+			local Pos = (P.Position - game.Workspace:FindFirstChild("Part01BotHub").Position).Magnitude
+			local tween_Service = game:service"TweenService"
+			local tween_info = TweenInfo.new(Pos/360, Enum.EasingStyle.Linear)
+			local Warp = tween_Service:Create(game:GetService("Players").LocalPlayer.Character["HumanoidRootPart"], tween_info, {CFrame = P})
+			Warp:Play()
+			if Pos <= 50 then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = P
+			end
+		end)
+	end
+	function CheckLevel()
+		local Level = game:GetService("Players").LocalPlayer.Data.Level.Value
+		if Level < 10 then
+			Mon = "Bandit"
+			SpawnPoint = "Default"
+			QuestName = "BanditQuest1"
+			QuestNumber = 1
+			CFrameQuest = CFrame.new(1059.9759521484375, 16.488065719604492, 1549.023193359375)
+			CFramePuk = CFrame.new(1108.1478271484375, 57.41001510620117, 1623.7769775390625)
+		elseif Level < 105 then
+			Mon = "Monkey"
+			SpawnPoint = "Jungle"
+			QuestName = "JungleQuest"
+			QuestNumber = 1
+			CFrameQuest = CFrame.new(-1599.5264892578125, 36.977455139160156, 153.2390899658203)
+			CFramePuk = CFrame.new(-1586.5660400390625, 39.97743606567383, 155.67477416992188)
+		end
+	end
+	spawn(function()
+		loop:Connect(function()
+			if _G.AutoFram and game.Workspace:FindFirstChild("Part01BotHub") then
+				pcall(function()
+					Tweenply(CFrame.new(game.Workspace:FindFirstChild("Part01BotHub").CFrame * CFrame.new(0,5,0)))
+				end)
+			end
+		end)
+	end)
+	spawn(function()
+		loop:Connect(function()
+			local LastSpawnPoint = game:GetService("Players").LocalPlayer.Data.LastSpawnPoint
+			CheckLevel()
+			if _G.AutoFram and _G.bypasstween and LastSpawnPoint.Value ~= SpawnPoint then
+				game.Workspace:FindFirstChild("Part01BotHub"):Destroy()
+				repeat
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrameQuest
+					game.Players.LocalPlayer.Character.Humanoid.Health = 0
+				until _G.AutoFram == false or LastSpawnPoint.Value == SpawnPoint
+			end
+		end)
+	end)
+	spawn(function()
+		loop:Connect(function()
+			CheckLevel()
+			if _G.AutoFram and game:GetService("Players").LocalPlayer.Data.LastSpawnPoint.Value == SpawnPoint then
+				newpart()
+				if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
+					Tween(CFrameQuest)
+					if (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 50 then
+						wait(0.3)
+						local Quest = {
+							[1] = "StartQuest",
+							[2] = QuestName,
+							[3] = QuestNumber
+						}
+						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(Quest))
+					end
+				end
+			end
+		end)
+	end)
+	spawn(function()
+		loop:Connect(function()
+			CheckLevel()
+			local loser = game:GetService("Players").LocalPlayer
+			if _G.AutoFram and loser.Data.LastSpawnPoint.Value == SpawnPoint then
+				newpart()
+				if loser.PlayerGui.Main.Quest.Visible == true then
+					pcall(function()
+						for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+							for x,y in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+								if v.Name == Mon and y.Name == Mon then
+									y.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
+									v.HumanoidRootPart.CanCollide = false
+									v.HumanoidRootPart.Anchored = false
+									v.HumanoidRootPart.Size = Vector3.new(20,50,20)
+									Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,20,0))
+									sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+								end
+							end
+						end
+					end)
+				end
+			end
+		end)
+	end)
+	spawn(function()
+		loop:Connect(function()
+			if _G.AutoFram then
+				pcall(function()
+					CheckLevel()
+					for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+						if v.Name == Mon then
+							if v.Humanoid.Health == 0 then
+								wait(0.1)
+								v:Destroy()
+							elseif v.Humanoid.Health >= 1 then
+								if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 50 then
+									_G.Attack = true
+								else
+									_G.Attack = false
+								end
+							end
+						else
+							Tween(CFramePuk)
+						end
+					end
+				end)
+			end
+		end)
+	end)
+	local A = getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework))[2]['activeController']
+	spawn(function()
+		loop:Connect(function()
+			if _G.AutoFram then
+				pcall(function()
+					require(game.ReplicatedStorage.Util.CameraShaker):Stop()
+					A.timeToNextAttack = 0
+					A.hitboxMagnitude = 50
+				end)
+			end
+		end)
+	end)
+	spawn(function()
+		loop:Connect(function()
+			if _G.Attack then
+				A:attack()
+			end
+		end)
+	end)
+	spawn(function()
+		loop:Connect(function()
+			if _G.Attack then
+				game:GetService'VirtualUser':CaptureController()
+				game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+			end
+		end)
+	end)
+	
+	
+	
+	
+	
+	spawn(function()
+	    loop:Connect(function()
+	        local args = {
+	            [1] = "AddPoint",
+	            [2] = "Melee",
+	            [3] = 1
+	        }
+	        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+	    end)
+	end)
+	spawn(function()
+	    pcall(function()
+	        local Code = {
+	            "SECRET_ADMIN",
+	            "CODESLIDE",
+	            "ADMINHACKED",
+	            "TRIPLEABUSE",
+	            "SEATROLLING",
+	            "ZIOLES",
+	            "KITT_RESET",
+	            "Sub2CaptainMaui",
+	            "SUB2GAMERROBOT_RESET1",
+	            "kittgaming",
+	            "Sub2Fer999",
+	            "Enyu_is_Pro",
+	            "Magicbus",
+	            "JCWK",
+	            "Starcodeheo",
+	            "Bluxxy",
+	            "fudd10_v2",
+	            "FUDD10",
+	            "BIGNEWS",
+	            "THEGREATACE",
+	            "SUB2GAMERROBOT_EXP1",
+	            "Sub2OfficialNoobie",
+	            "StrawHatMaine",
+	            "SUB2NOOBMASTER123",
+	            "Sub2UncleKizaru",
+	            "Sub2Daigrock",
+	            "Axiore",
+	            "TantaiGaming"
+	        }
+	        for i,v in pairs(Code) do
+	            game:GetService("ReplicatedStorage").Remotes.Redeem:InvokeServer(v)
+	        end
+	    end)
+	end)
+end
+coroutine.wrap(DWGLVOA_fake_script)()
