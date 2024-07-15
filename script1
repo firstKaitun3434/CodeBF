@@ -142,7 +142,7 @@ TextButton_3.TextSize = 14.000
 
 -- Scripts:
 
-local function HIJVNL_fake_script() -- Frame.LocalScript 
+local function BXRRX_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.TextButton.MouseButton1Click:Connect(function()
@@ -150,8 +150,8 @@ local function HIJVNL_fake_script() -- Frame.LocalScript
 		script.Parent.Parent.Frame2.Visible = true
 	end)
 end
-coroutine.wrap(HIJVNL_fake_script)()
-local function NMAJWC_fake_script() -- Frame2.LocalScript 
+coroutine.wrap(BXRRX_fake_script)()
+local function VFXHHX_fake_script() -- Frame2.LocalScript 
 	local script = Instance.new('LocalScript', Frame2)
 
 	local part = script.Parent.TextButton
@@ -174,20 +174,19 @@ local function NMAJWC_fake_script() -- Frame2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NMAJWC_fake_script)()
-local function SQVR_fake_script() -- Frame_4.LocalScript 
+coroutine.wrap(VFXHHX_fake_script)()
+local function KZMJWQ_fake_script() -- Frame_4.LocalScript 
 	local script = Instance.new('LocalScript', Frame_4)
 
 	_G.AutoFram = false
-	_G.bypasstween = true
 	pcall(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/b3styskid/MAZI-API/main/SaveSettingAPI.lua'))()
 	end)
 	if Check_Setting("Bothub_"..game.Players.LocalPlayer.Name) then
-		_G.AutoFram = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["AutoFram"] or false
-		_G.AutoEquip = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["AutoEquip"] or false
-		_G.bypasstween = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["bypasstween"] or false
-		_G.AutoUpdatePoint = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name)["AutoUpdatePoint"] or false
+		_G.AutoFram = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name).AutoFram
+		_G.AutoEquip = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name).AutoEquip
+		_G.bypasstween = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name).bypasstween
+		_G.AutoUpdatePoint = Get_Setting("Bothub_"..game.Players.LocalPlayer.Name).AutoUpdatePoint
 	else
 		_G.AutoFram = false
 		_G.AutoEquip = false
@@ -214,4 +213,4 @@ local function SQVR_fake_script() -- Frame_4.LocalScript
 		print(_G.AutoFram)
 	end)
 end
-coroutine.wrap(SQVR_fake_script)()
+coroutine.wrap(KZMJWQ_fake_script)()
