@@ -1,0 +1,351 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Bothub = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Guitomouse = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local script = Instance.new("Frame")
+local AutoFramLevel = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Namescript = Instance.new("TextLabel")
+local button = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local posbutton = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local ButtonPos = Instance.new("TextButton")
+local AutoEquip = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Namescript_2 = Instance.new("TextLabel")
+local button_2 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local posbutton_2 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local ButtonPos_2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+
+--Properties:
+
+Bothub.Name = "Bothub"
+Bothub.Parent = game.CoreGui
+Bothub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Bothub
+Frame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.299567103, 0, 0.34959349, 0)
+Frame.Size = UDim2.new(0.400000006, 0, 0.300000012, 0)
+Frame.Visible = false
+
+UICorner.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = Bothub
+Frame2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Frame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0.299567103, 0, 0.149593502, 0)
+Frame2.Size = UDim2.new(0.400000006, 0, 0.699999988, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.00999999978, 0)
+UICorner_2.Parent = Frame2
+
+Guitomouse.Name = "Guitomouse"
+Guitomouse.Parent = Frame2
+Guitomouse.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Guitomouse.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Guitomouse.BorderSizePixel = 0
+Guitomouse.Size = UDim2.new(1, 0, 0.0799999982, 0)
+Guitomouse.Font = Enum.Font.SourceSans
+Guitomouse.Text = ""
+Guitomouse.TextColor3 = Color3.fromRGB(0, 0, 0)
+Guitomouse.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = Guitomouse
+
+script.Name = "script"
+script.Parent = Frame2
+script.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+script.BackgroundTransparency = 1.000
+script.BorderColor3 = Color3.fromRGB(0, 0, 0)
+script.BorderSizePixel = 0
+script.Position = UDim2.new(0.0324676633, 0, 0.111498222, 0)
+script.Size = UDim2.new(0.934631884, 0, 0.853426397, 0)
+
+AutoFramLevel.Name = "AutoFramLevel"
+AutoFramLevel.Parent = script
+AutoFramLevel.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+AutoFramLevel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoFramLevel.BorderSizePixel = 0
+AutoFramLevel.Position = UDim2.new(0.0486337058, 0, 0.0272183288, 0)
+AutoFramLevel.Size = UDim2.new(0.899999976, 0, 0.0972781703, 0)
+
+UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_4.Parent = AutoFramLevel
+
+Namescript.Name = "Namescript"
+Namescript.Parent = AutoFramLevel
+Namescript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Namescript.BackgroundTransparency = 1.000
+Namescript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Namescript.BorderSizePixel = 0
+Namescript.Position = UDim2.new(0.0231589526, 0, 0.139898911, 0)
+Namescript.Size = UDim2.new(0.550311387, 0, 0.699497104, 0)
+Namescript.Font = Enum.Font.SourceSans
+Namescript.Text = "Auto Fram Level"
+Namescript.TextColor3 = Color3.fromRGB(200, 200, 200)
+Namescript.TextScaled = true
+Namescript.TextSize = 14.000
+Namescript.TextWrapped = true
+Namescript.TextXAlignment = Enum.TextXAlignment.Left
+
+button.Name = "button"
+button.Parent = AutoFramLevel
+button.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+button.BorderSizePixel = 0
+button.Position = UDim2.new(0.851732016, 0, 0.139899254, 0)
+button.Size = UDim2.new(0.12058568, 0, 0.699496031, 0)
+
+UICorner_5.CornerRadius = UDim.new(1, 1)
+UICorner_5.Parent = button
+
+posbutton.Name = "posbutton"
+posbutton.Parent = button
+posbutton.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+posbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+posbutton.BorderSizePixel = 0
+posbutton.Position = UDim2.new(0.0799999982, 0, 0.0900000036, 0)
+posbutton.Size = UDim2.new(0.4146429, 0, 0.798398733, 0)
+posbutton.Font = Enum.Font.SourceSans
+posbutton.Text = ""
+posbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+posbutton.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(1, 1)
+UICorner_6.Parent = posbutton
+
+ButtonPos.Name = "ButtonPos"
+ButtonPos.Parent = button
+ButtonPos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonPos.BackgroundTransparency = 1.000
+ButtonPos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonPos.BorderSizePixel = 0
+ButtonPos.Size = UDim2.new(1, 0, 1, 0)
+ButtonPos.Font = Enum.Font.SourceSans
+ButtonPos.Text = ""
+ButtonPos.TextColor3 = Color3.fromRGB(0, 0, 0)
+ButtonPos.TextSize = 14.000
+
+AutoEquip.Name = "AutoEquip"
+AutoEquip.Parent = script
+AutoEquip.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+AutoEquip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoEquip.BorderSizePixel = 0
+AutoEquip.Position = UDim2.new(0.0486337058, 0, 0.149700612, 0)
+AutoEquip.Size = UDim2.new(0.899999976, 0, 0.0972781703, 0)
+
+UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_7.Parent = AutoEquip
+
+Namescript_2.Name = "Namescript"
+Namescript_2.Parent = AutoEquip
+Namescript_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Namescript_2.BackgroundTransparency = 1.000
+Namescript_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Namescript_2.BorderSizePixel = 0
+Namescript_2.Position = UDim2.new(0.0231589526, 0, 0.139898911, 0)
+Namescript_2.Size = UDim2.new(0.550311387, 0, 0.699497104, 0)
+Namescript_2.Font = Enum.Font.SourceSans
+Namescript_2.Text = "Auto Equip"
+Namescript_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+Namescript_2.TextScaled = true
+Namescript_2.TextSize = 14.000
+Namescript_2.TextWrapped = true
+Namescript_2.TextXAlignment = Enum.TextXAlignment.Left
+
+button_2.Name = "button"
+button_2.Parent = AutoEquip
+button_2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+button_2.BorderSizePixel = 0
+button_2.Position = UDim2.new(0.851732016, 0, 0.139899254, 0)
+button_2.Size = UDim2.new(0.12058568, 0, 0.699496031, 0)
+
+UICorner_8.CornerRadius = UDim.new(1, 1)
+UICorner_8.Parent = button_2
+
+posbutton_2.Name = "posbutton"
+posbutton_2.Parent = button_2
+posbutton_2.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
+posbutton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+posbutton_2.BorderSizePixel = 0
+posbutton_2.Position = UDim2.new(0.0799999982, 0, 0.0900000036, 0)
+posbutton_2.Size = UDim2.new(0.4146429, 0, 0.798398733, 0)
+posbutton_2.Font = Enum.Font.SourceSans
+posbutton_2.Text = ""
+posbutton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+posbutton_2.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(1, 1)
+UICorner_9.Parent = posbutton_2
+
+ButtonPos_2.Name = "ButtonPos"
+ButtonPos_2.Parent = button_2
+ButtonPos_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonPos_2.BackgroundTransparency = 1.000
+ButtonPos_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonPos_2.BorderSizePixel = 0
+ButtonPos_2.Size = UDim2.new(1, 0, 1, 0)
+ButtonPos_2.Font = Enum.Font.SourceSans
+ButtonPos_2.Text = ""
+ButtonPos_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ButtonPos_2.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(0.00999999978, 0)
+UICorner_10.Parent = script
+
+-- Scripts:
+
+local function ITLJWHX_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Frame .Visible = false
+		script.Parent.Parent.Frame2.Visible = true
+	end)
+end
+coroutine.wrap(ITLJWHX_fake_script)()
+local function CTUZAP_fake_script() -- Frame2.LocalScript 
+	local script = Instance.new('LocalScript', Frame2)
+
+	local part = script.Parent.Guitomouse
+	local part2 = script.Parent.Parent.Frame2
+	local ply = game.Players
+	local mouse = game:GetService("UserInputService")
+	local b
+	game:GetService("RunService").RenderStepped:Connect(function()
+		part.MouseButton1Down:Connect(function()
+			b = (part2.Position - UDim2.new(0, mouse:GetMouseLocation().X - 600 , 0, mouse:GetMouseLocation().Y - 300))
+			_G.a = true
+		end)
+		part.MouseButton1Up:Connect(function()
+			_G.a = false
+		end)
+	end)
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.a then
+			part2.Position = b + UDim2.new(0, mouse:GetMouseLocation().X - 600 , 0, mouse:GetMouseLocation().Y - 300)
+		end
+	end)
+end
+coroutine.wrap(CTUZAP_fake_script)()
+local function ZXQH_fake_script() -- button.LocalScript 
+	local script = Instance.new('LocalScript', button)
+
+	_G.AutoFram = true
+	local A = script.Parent.posbutton
+	local B = script.Parent.UIStroke
+	if _G.AutoFram == true then
+		A.Position = UDim2.new(0.5, 0,0.09, 0)
+		A.BackgroundColor3 = Color3.new(0, 0.784314, 0.784314)
+		B.Color = Color3.new(0, 0.784314, 0.784314)
+	else
+		A = UDim2.new(0.08, 0,0.09, 0)
+		A.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+		B.Color = Color3.new(0.196078, 0.196078, 0.196078)
+	end
+	function Tween(P)
+		local tween_Service = game:service"TweenService"
+		local tween_info = TweenInfo.new(0.12, Enum.EasingStyle.Linear)
+		local wa = tween_Service:Create(A, tween_info, {Position = P})
+		wa:Play()
+	end
+	script.Parent.ButtonPos.MouseButton1Click:Connect(function()
+		if _G.AutoFram == false then
+			Tween(UDim2.new(0.5, 0,0.09, 0))
+			wait(0.25)
+			A.BackgroundColor3 = Color3.new(0, 0.784314, 0.784314)
+			B.Color = Color3.new(0, 0.784314, 0.784314)
+			_G.AutoFram = true
+		else
+			Tween(UDim2.new(0.08, 0,0.09, 0))
+			A.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+			B.Color = Color3.new(0.196078, 0.196078, 0.196078)
+			wait(0.25)
+			_G.AutoFram = false
+		end
+	end)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/firstKaitun3434/CodeBF/main/Fram"))()
+end
+coroutine.wrap(ZXQH_fake_script)()
+local function TBTMS_fake_script() -- button_2.LocalScript 
+	local script = Instance.new('LocalScript', button_2)
+
+	_G.AutoEquip = true
+	local A = script.Parent.posbutton
+	local B = script.Parent.UIStroke
+	if _G.AutoEquip == true then
+		A.Position = UDim2.new(0.5, 0,0.09, 0)
+		A.BackgroundColor3 = Color3.new(0, 0.784314, 0.784314)
+		B.Color = Color3.new(0, 0.784314, 0.784314)
+	else
+		A = UDim2.new(0.08, 0,0.09, 0)
+		A.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+		B.Color = Color3.new(0.196078, 0.196078, 0.196078)
+	end
+	function Tween(P)
+		local tween_Service = game:service"TweenService"
+		local tween_info = TweenInfo.new(0.12, Enum.EasingStyle.Linear)
+		local wa = tween_Service:Create(A, tween_info, {Position = P})
+		wa:Play()
+	end
+	script.Parent.ButtonPos.MouseButton1Click:Connect(function()
+		if _G.AutoEquip == false then
+			Tween(UDim2.new(0.5, 0,0.09, 0))
+			wait(0.25)
+			A.BackgroundColor3 = Color3.new(0, 0.784314, 0.784314)
+			B.Color = Color3.new(0, 0.784314, 0.784314)
+			_G.AutoEquip = true
+		else
+			Tween(UDim2.new(0.08, 0,0.09, 0))
+			A.BackgroundColor3 = Color3.new(0.588235, 0.588235, 0.588235)
+			B.Color = Color3.new(0.196078, 0.196078, 0.196078)
+			wait(0.25)
+			_G.AutoEquip = false
+		end
+	end)
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.AutoEquip then
+			game.Players.LocalPlayer.Character.Humanoid:EquipTool(game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Combat"))
+		end
+	end)
+end
+coroutine.wrap(TBTMS_fake_script)()
+local function RIGM_fake_script() -- Bothub.LocalScript 
+	local script = Instance.new('LocalScript', Bothub)
+
+	script.Parent.Frame .Visible = true
+	script.Parent.Frame2.Visible = false
+end
+coroutine.wrap(RIGM_fake_script)()
