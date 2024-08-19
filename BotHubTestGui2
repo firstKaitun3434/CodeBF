@@ -1,8 +1,14 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
+local CombatFramework = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
+local Camera = require(game.ReplicatedStorage.Util.CameraShaker)
+Camera:Stop()
+spawn(function()
+    pcall(function()
+        game:GetService("RunService").RenderStepped:Connect(function()
+            getupvalues(CombatFramework)[2]['activeController'].timeToNextAttack = -1
+            getupvalues(CombatFramework)[2]['activeController'].hitboxMagnitude = 50
+        end)
+    end)
+end)
 local Bothub = Instance.new("ScreenGui")
 local BothubFrame = Instance.new("Frame")
 local Bothubtext = Instance.new("TextLabel")
