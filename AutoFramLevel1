@@ -1,0 +1,429 @@
+_G.AutoFram = true
+function Tween(P)
+	pcall(function()
+		local Pos = (P.Position - game.Workspace:FindFirstChild("Part01BotHub").Position).Magnitude
+		local tween_Service = game:GetService("TweenService")
+		local tween_info = TweenInfo.new(Pos/350, Enum.EasingStyle.Linear)
+		local Warp = tween_Service:Create(game.Workspace:FindFirstChild("Part01BotHub"), tween_info, {CFrame = P * CFrame.new(0,-5,0)})
+		Warp:Play()
+		if Pos <= 50 then
+			game.Workspace:FindFirstChild("Part01BotHub").CFrame = P * CFrame.new(0,-5,0)
+		end
+	end)
+end
+function Tweenply(P)
+	pcall(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+		local Pos = (P.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+		local tween_Service = game:GetService("TweenService")
+		local tween_info = TweenInfo.new(Pos/355, Enum.EasingStyle.Linear)
+		local Warp = tween_Service:Create(game:GetService("Players").LocalPlayer.Character["HumanoidRootPart"], tween_info, {CFrame = P})
+		Warp:Play()
+		if Pos <= 50 then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = P
+		end
+	end)
+end
+function newpart()
+	if not game.Workspace:FindFirstChild("Part01BotHub") then
+		local part = Instance.new("Part",game.Workspace)
+		part.Anchored = true
+		part.Size = Vector3.new(30,1,30)
+		part.Transparency = 0
+		part.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-5,0)
+		part.Name = "Part01BotHub"
+	end
+end
+function CheckLevel()
+	local Level = game:GetService("Players").LocalPlayer.Data.Level.Value
+	if Level <= 9 then
+		Mon = "Bandit"
+		lastSpawnPoint = "Default"
+		QuestName = "BanditQuest1"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(1059.9759521484375, 16.488065719604492, 1549.023193359375)
+		CFramePuk = CFrame.new(1108.1478271484375, 57.41001510620117, 1623.7769775390625)
+		lastSpawnPointpos = CFramePuk
+	elseif Level <= 14 then
+		Mon = "Monkey"
+		lastSpawnPoint = "Jungle"
+		QuestName = "JungleQuest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(-1599.5264892578125, 36.977455139160156, 153.2390899658203)
+		CFramePuk = CFrame.new(-1586.5660400390625, 39.97743606567383, 155.67477416992188)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 15 or Level <= 29 then
+		Mon = "Gorilla"
+		lastSpawnPoint = "Jungle"
+		QuestName = "JungleQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(-1599.5264892578125, 36.977455139160156, 153.2390899658203)
+		CFramePuk = CFrame.new(-1133.4573974609375, 40.55147933959961, -526.0867919921875)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 30 or Level <= 39 then
+		Mon = "Pirate"
+		lastSpawnPoint = "Pirate"
+		QuestName = "BuggyQuest1"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(-1140.6392822265625, 4.840033054351807, 3829.99755859375)
+		CFramePuk = CFrame.new(-1251.6549072265625, 44.84001922607422, 3817.862548828125)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 40 or Level <= 59 then
+		Mon = "Brute"
+		lastSpawnPoint = "Pirate"
+		QuestName = "BuggyQuest1"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(-1140.6392822265625, 4.840033054351807, 3829.99755859375)
+		CFramePuk = CFrame.new(-1150.3299560546875, 14.897858619689941, 4297.00439453125)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 60 or Level <= 74 then
+		Mon = "Desert Bandit"
+		lastSpawnPoint = "Desert"
+		QuestName = "DesertQuest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(895.52880859375, 6.526445388793945, 4391.4169921875)
+		CFramePuk = CFrame.new(916.63671875, 6.537024021148682, 4487.20458984375)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 75 or Level <= 89 then
+		Mon = "Desert Officer"
+		lastSpawnPoint = "Desert"
+		QuestName = "DesertQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(895.52880859375, 6.526445388793945, 4391.4169921875)
+		CFramePuk = CFrame.new(1569.0352783203125, 10.700920104980469, 4383.69580078125)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 90 or Level <= 104 then
+		Mon = "Snow Bandit"
+		lastSpawnPoint = "Ice"
+		QuestName = "SnowQuest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(1388.01220703125, 87.36077117919922, -1298.83642578125)
+		CFramePuk = CFrame.new(1380.3599853515625, 99.30429077148438, -1423.5404052734375)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 105 or Level <= 119 then
+		Mon = "Snowman"
+		lastSpawnPoint = "Ice"
+		QuestName = "SnowQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(1388.01220703125, 87.36077117919922, -1298.83642578125)
+		CFramePuk = CFrame.new(1069.3868408203125, 133.99497985839844, -1418.2171630859375)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 120 or Level <= 149 then
+		Mon = "Chief Petty Officer"
+		lastSpawnPoint = "MarineBase"
+		QuestName = "MarineQuest2"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(-5038.29638671875, 29.410030364990234, 4324.62939453125)
+		CFramePuk = CFrame.new(-4889.01416015625, 51.051612854003906, 4330.31982421875)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 150 or Level <= 174 then
+		Mon = "Sky Bandit"
+		lastSpawnPoint = "Sky"
+		QuestName = "SkyQuest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(-4840.31298828125, 717.6951293945312, -2620.99560546875)
+		CFramePuk = CFrame.new(-4954.60107421875, 295.7699890136719, -2901.8095703125)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 175 or Level <= 189 then
+		Mon = "Dark Master"
+		lastSpawnPoint = "Sky"
+		QuestName = "SkyQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(-4840.31298828125, 717.6951293945312, -2620.99560546875)
+		CFramePuk = CFrame.new(-5275.0576171875, 388.677734375, -2182.991943359375)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 190 or Level <= 209 then
+		Mon = "Prisoner"
+		lastSpawnPoint = "Prison"
+		QuestName = "PrisonerQuest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(5309.55224609375, 2.751951217651367, 474.6793212890625)
+		CFramePuk = CFrame.new(5209.7275390625, 2.0596046447753906, 404.4384765625)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 210 or Level <= 249 then
+		Mon = "Dangerous Prisoner"
+		lastSpawnPoint = "Prison"
+		QuestName = "PrisonerQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(5309.55224609375, 2.751951217651367, 474.6793212890625)
+		CFramePuk = CFrame.new(5582.32861328125, 2.079057216644287, 642.074462890625)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 250 or Level <= 274 then
+		Mon = "Toga Warriosrs"
+		lastSpawnPoint = "Colosseum"
+		QuestName = "ColosseumQuest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(-1580.975341796875, 8.53930950164795, -2987.01904296875)
+		CFramePuk = CFrame.new(-1907.4151611328125, 7.71650505065918, -2744.267578125)
+		lastSpawnPointpos = CFramePuk
+	elseif Level == 275 or Level <= 299 then
+		Mon = "Gladiator"
+		lastSpawnPoint = "Colosseum"
+		QuestName = "ColosseumQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(-1580.975341796875, 8.53930950164795, -2987.01904296875)
+		CFramePuk = CFrame.new(-1455.5758056640625, 7.869977951049805, -3246.27978515625)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 300 or Level <= 324 then
+        Mon = "Military Soldier"
+        lastSpawnPoint = "Magma"
+        QuestName = "MagmaQuest"
+        QuestNumber = 1
+        CFrameQuest = CFrame.new(-5314.57568359375, 12.324601173400879, 8516.00390625)
+        CFramePuk = CFrame.new(-5397.41943359375, 27.602596282958984, 8526.42578125)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 325 or Level <= 374 then
+        Mon = "Military Spy"
+		lastSpawnPoint = "Magma"
+		QuestName = "MagmaQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(-5314.57568359375, 12.324601173400879, 8516.00390625)
+		CFramePuk = CFrame.new(-5852.734375, 77.31864929199219, 8836.228515625)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 375 or Level <= 399 then
+        Mon = "Fishman Warrior"
+		lastSpawnPoint = "Fishman"
+		QuestName = "FishmanQuest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(61121.8125, 18.55962371826172, 1566.15087890625)
+		CFramePuk = CFrame.new(60945.375, 48.76150131225586, 1551.1219482421875)
+    	lastSpawnPointpos = CFrame.new(4043.550048828125, 1.876570987701416, -1816.0218505859)
+	elseif Level == 400 or Level <= 449 then
+        Mon = "Fishman Commando"
+		lastSpawnPoint = "Fishman"
+		QuestName = "FishmanQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(61121.8125, 18.55962371826172, 1566.15087890625)
+		CFramePuk = CFrame.new(61717.5546875, 29.1466121673584, 1623.687255859375)
+    	lastSpawnPointpos = CFrame.new(4043.550048828125, 1.876570987701416, -1816.0218505859)
+	elseif Level == 450 or Level <= 474 then
+        Mon = "God's Guard"
+		lastSpawnPoint = "Sky"
+		QuestName = "SkyExp1Quest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(-4721.62353515625, 845.3650512695312, -1951.2694091796875)
+		CFramePuk = CFrame.new(-4713.86669921875, 852.9006958007812, -1929.9285888671875)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 475 or Level <= 524 then
+        Mon = "Shanda"
+		lastSpawnPoint = "Sky2"
+		QuestName = "SkyExp1Quest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(-7861.1982421875, 5545.58203125, -380.5006103515625)
+		CFramePuk = CFrame.new(-7686.77978515625, 5567.2822265625, -502.60858154296875)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 525 or Level <= 549 then
+        Mon = "Royal Soldier"
+		lastSpawnPoint = "Sky2"
+		QuestName = "SkyExp2Quest"
+		QuestNumber = 1
+		CFrameQuest = CFrame.new(-7903.27685546875, 5636.052734375, -1410.0068359375)
+		CFramePuk = CFrame.new(-7637.23095703125, 5637.17041015625, -1430.0626220703125)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 550 or Level <= 624 then
+        Mon = "Royal Soldier"
+		lastSpawnPoint = "Sky2"
+		QuestName = "SkyExp2Quest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(-7903.27685546875, 5636.052734375, -1410.0068359375)
+		CFramePuk = CFrame.new(-7836.96875, 5622.3701171875, -1783.1490478515625)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 625 or Level <= 649 then
+        Mon = "Galley Pirate"
+		lastSpawnPoint = "Fountain"
+		QuestName = "FountainQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(5258.47021484375, 38.58911895751953, 4050.034912109375)
+		CFramePuk = CFrame.new(5586.0859375, 42.32569122314453, 3999.028076171875)
+    	lastSpawnPointpos = CFramePuk
+	elseif Level == 650 or Level >= 700 then
+        Mon = "Galley Captain"
+		lastSpawnPoint = "Fountain"
+		QuestName = "FountainQuest"
+		QuestNumber = 2
+		CFrameQuest = CFrame.new(5258.47021484375, 38.58911895751953, 4050.034912109375)
+		CFramePuk = CFrame.new(5693.212890625, 42.58934783935547, 4965.0361328125)
+        lastSpawnPointpos = CFramePuk
+	end
+end
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		pcall(function()
+			CheckLevel()
+			if _G.AutoFram then
+				if game:GetService("Players").LocalPlayer.Data.LastSpawnPoint.Value == lastSpawnPoint then
+					newpart()
+				else
+					repeat task.wait()
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = lastSpawnPointpos
+						game.Players.LocalPlayer.Character.Humanoid.Health = 0
+					until _G.AutoFram == false or game:GetService("Players").LocalPlayer.Data.LastSpawnPoint.Value == lastSpawnPoint
+					game.Workspace:FindFirstChild("Part01BotHub"):Destroy()
+					Tweenply(CFrameQuest)
+				end
+			else
+				_G.Attack = false
+				game.Workspace:FindFirstChild("Part01BotHub"):Destroy()
+			end
+		end)
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.AutoFram then
+			pcall(function()
+				if (game.Workspace:FindFirstChild("Part01BotHub").Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 1000 then
+					game.Workspace:FindFirstChild("Part01BotHub"):Destroy()
+				end
+			end)
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.AutoFram then
+			pcall(function()
+				CheckLevel()
+				if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false and game:GetService("Players").LocalPlayer.Data.LastSpawnPoint.Value == lastSpawnPoint then
+					game.Workspace:FindFirstChild("Part01BotHub"):Destroy()
+                    CheckLevel()
+					if (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 10000 then
+						Tweenply(CFrameQuest)
+					else
+						Tweenply(lastSpawnPointpos)
+					end
+					if (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 50 then
+						wait(0.5)
+						local args = {
+							[1] = "StartQuest",
+							[2] = QuestName,
+							[3] = QuestNumber
+						}
+						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
+                        newpart()
+					end
+				end
+			end)
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.AutoFram then
+			if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true and game:GetService("Players").LocalPlayer.Data.LastSpawnPoint.Value == lastSpawnPoint then
+				CheckLevel()
+				pcall(function()
+					for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+						for x,y in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+							if v.Name == Mon and y.Name == Mon then
+								v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+								v.HumanoidRootPart.CanCollide = false
+								v.Humanoid.WalkSpeed = 0
+								v.Humanoid.JumpPower = 0
+								v.HumanoidRootPart.CFrame = y.HumanoidRootPart.CFrame
+								--sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+								Tweenply(v.HumanoidRootPart.CFrame * CFrame.new(0,20,0))
+								Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,20,0))
+							end
+						end
+					end
+				end)
+			end
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.AutoFram then
+			CheckLevel()
+			pcall(function()
+				for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+					if v.Name == Mon then
+						if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 50 then
+							_G.Attack = true
+						else
+							_G.Attack = false
+						end
+						if v.Humanoid.Health == 0 then
+							wait(0.1)
+							v:Destroy()
+						end
+					end
+				end
+			end)
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.AutoFram then
+			CheckLevel()
+			pcall(function()
+				if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
+					if not game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
+						if game:GetService("Players").LocalPlayer.Data.LastSpawnPoint.Value == lastSpawnPoint  then
+							if (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 10000 then
+								Tweenply(CFramePuk)
+								Tween(CFramePuk)
+							end
+						end
+						_G.Attack = false
+					end
+				end
+			end)
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		pcall(function()
+			if _G.AutoFram then
+				CheckLevel()
+				if not string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text, Mon) then
+					game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
+				end
+			end
+		end)
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.Attack then
+			game:GetService'VirtualUser':CaptureController()
+			game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.Attack then
+			game:GetService'VirtualUser':CaptureController()
+			game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.Attack then
+			game:GetService'VirtualUser':CaptureController()
+			game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+		end
+	end)
+end)
+
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.Attack then
+			game:GetService'VirtualUser':CaptureController()
+			game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+		end
+	end)
+end)
+spawn(function()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.Attack then
+			game:GetService'VirtualUser':CaptureController()
+			game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+		end
+	end)
+end)
