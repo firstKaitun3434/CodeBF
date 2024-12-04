@@ -1514,21 +1514,21 @@ local function WAROB_fake_script() -- FrameAutoShake.AutoShake
 		writefile(AutoShake..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().FramShake))
 	end)
 	spawn(function()
-		game:GetService("RunService").RenderStepped:Connect(function()
-			if game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("shakeui") and _G.AutoShake then
-				if game:GetService("Players").LocalPlayer.PlayerGui.shakeui:FindFirstChild("safezone") then
-					if game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button") then
-						game:GetService('GuiService').SelectedObject = game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button")
-						if game:GetService('GuiService').SelectedObject == game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button") then
-							game:GetService('VirtualInputManager'):SendKeyEvent(true, Enum.KeyCode.Return, false, game)
-							game:GetService('VirtualInputManager'):SendKeyEvent(false, Enum.KeyCode.Return, false, game)
-						end
-						wait(0.1)
-						game:GetService('GuiService').SelectedObject = nil
-					end
+game:GetService("RunService").RenderStepped:Connect(function()
+	if game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("shakeui") and _G.AutoShake then
+		if game:GetService("Players").LocalPlayer.PlayerGui.shakeui:FindFirstChild("safezone") then
+			if game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button") then
+				game:GetService('GuiService').SelectedObject = game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button")
+				if game:GetService('GuiService').SelectedObject == game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button") then
+					game:GetService('VirtualInputManager'):SendKeyEvent(true, Enum.KeyCode.Return, false, game)
+					game:GetService('VirtualInputManager'):SendKeyEvent(false, Enum.KeyCode.Return, false, game)
+					wait(0.01)
+					game:GetService('GuiService').SelectedObject = nil
 				end
 			end
-		end)
+		end
+	end
+end)
 	end)
 end
 coroutine.wrap(WAROB_fake_script)()
