@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Bothub = Instance.new("ScreenGui")
 local BotHubFrame = Instance.new("Frame")
 local BotHubFrameTwo = Instance.new("Frame")
@@ -1519,17 +1514,19 @@ local function WAROB_fake_script() -- FrameAutoShake.AutoShake
 		writefile(AutoShake..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().FramShake))
 	end)
 	spawn(function()
-		game:GetService('Players').LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
-			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' and _G.AutoShake then
-				task.wait(0.21)
-				game:GetService('GuiService').SelectedObject = Descendant
-				game:GetService('VirtualInputManager'):SendKeyEvent(true, Enum.KeyCode.Return, false, game)
-				game:GetService('VirtualInputManager'):SendKeyEvent(false, Enum.KeyCode.Return, false, game)
-				task.wait(0.1)
-				game:GetService('GuiService').SelectedObject = nil
-			elseif Descendant.Name == 'playerbar' and Descendant.Parent.Name == 'bar' then
-				Descendant:GetPropertyChangedSignal('Position'):Wait()
-				game:GetService('ReplicatedStorage').events.reelfinished:FireServer(100, true)
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("shakeui") and _G.AutoShake then
+				if game:GetService("Players").LocalPlayer.PlayerGui.shakeui:FindFirstChild("safezone") then
+					if game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button") then
+						game:GetService('GuiService').SelectedObject = game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button")
+						if game:GetService('GuiService').SelectedObject == game:GetService("Players").LocalPlayer.PlayerGui.shakeui.safezone:FindFirstChild("button") then
+							game:GetService('VirtualInputManager'):SendKeyEvent(true, Enum.KeyCode.Return, false, game)
+							game:GetService('VirtualInputManager'):SendKeyEvent(false, Enum.KeyCode.Return, false, game)
+						end
+						wait(0.1)
+						game:GetService('GuiService').SelectedObject = nil
+					end
+				end
 			end
 		end)
 	end)
