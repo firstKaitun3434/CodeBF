@@ -1,0 +1,1928 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Bothub = Instance.new("ScreenGui")
+local BotHubFrame = Instance.new("Frame")
+local BotHubFrameTwo = Instance.new("Frame")
+local bar = Instance.new("TextButton")
+local BotHub = Instance.new("TextLabel")
+local BotHub_2 = Instance.new("TextLabel")
+local MainFrameScript = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local MainButton = Instance.new("TextButton")
+local MainText = Instance.new("TextLabel")
+local MainCorner = Instance.new("UICorner")
+local First = Instance.new("UIListLayout")
+local Map = Instance.new("Frame")
+local MapButton = Instance.new("TextButton")
+local MapText = Instance.new("TextLabel")
+local FischCorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Setting = Instance.new("Frame")
+local SettingButton = Instance.new("TextButton")
+local SettingText = Instance.new("TextLabel")
+local settingCorner = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local BarFram = Instance.new("Frame")
+local Mainbar = Instance.new("TextLabel")
+local MainCorner_2 = Instance.new("UICorner")
+local AutoFramFisch = Instance.new("Frame")
+local Mainbar_2 = Instance.new("TextLabel")
+local MainCorner_3 = Instance.new("UICorner")
+local FrameAutoFram = Instance.new("Frame")
+local ButtonAutoFramLevel = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local FrameTwoAutoFram = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local AutoFramLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local AutoShake = Instance.new("Frame")
+local Mainbar_3 = Instance.new("TextLabel")
+local MainCorner_4 = Instance.new("UICorner")
+local FrameAutoShake = Instance.new("Frame")
+local ButtonAutoShake = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local FrameTwoAutoShake = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local AutoShakeLabel = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local AutoFramEven = Instance.new("Frame")
+local Mainbar_4 = Instance.new("TextLabel")
+local MainCorner_5 = Instance.new("UICorner")
+local FrameAutoFramEven = Instance.new("Frame")
+local ButtonAutoFramLevel_2 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local FrameTwoAutoFramEven = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local AutoFramLabel_2 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Autogoto = Instance.new("Frame")
+local Mainbar_5 = Instance.new("TextLabel")
+local MainCorner_6 = Instance.new("UICorner")
+local Autotodet = Instance.new("Frame")
+local ButtonAutogotoLevel = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local FrameTwoAutogaoto = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local AutogotoLabel = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local SetPos = Instance.new("Frame")
+local Mainbar_6 = Instance.new("TextLabel")
+local MainCorner_7 = Instance.new("UICorner")
+local SetPosButton = Instance.new("TextButton")
+local MapFrame = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Teleport = Instance.new("Frame")
+local Mainbar_7 = Instance.new("TextLabel")
+local MainCorner_8 = Instance.new("UICorner")
+local Land = Instance.new("Frame")
+local landbar = Instance.new("TextLabel")
+local MainCorner_9 = Instance.new("UICorner")
+local Frameland = Instance.new("Frame")
+local openorcleseMap = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local keyMap = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local landdowdaw = Instance.new("Frame")
+local Mainbar_8 = Instance.new("TextLabel")
+local MainCorner_10 = Instance.new("UICorner")
+local Moosewood = Instance.new("Frame")
+local Moosewood_2 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local Snowcap = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local SnowcapIsland = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Terrapin = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TerrapinIsland = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Forsaken = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local ForsakenShores = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Roslit = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local RoslitBay = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Sunstone = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local SnowcapIsland_2 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Sovereignty = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local StatueofSovereignty = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Mushgrove = Instance.new("Frame")
+local MushgroveSwamp = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local Archeological = Instance.new("Frame")
+local TextLabel_10 = Instance.new("TextLabel")
+local ArcheologicalSite = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Warp = Instance.new("Frame")
+local Mainbar_9 = Instance.new("TextLabel")
+local MainCorner_11 = Instance.new("UICorner")
+local SetPosButton_2 = Instance.new("TextButton")
+local clodeGui = Instance.new("TextLabel")
+local clode = Instance.new("TextButton")
+local FrameCorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Bothub.Name = "Bothub"
+Bothub.Parent = game.CoreGui
+Bothub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BotHubFrame.Name = "BotHubFrame"
+BotHubFrame.Parent = Bothub
+BotHubFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BotHubFrame.BackgroundTransparency = 0.400
+BotHubFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BotHubFrame.BorderSizePixel = 0
+BotHubFrame.Position = UDim2.new(0.306972831, 0, 0.191759095, 0)
+BotHubFrame.Size = UDim2.new(0.40034014, 0, 0.506973922, 0)
+
+BotHubFrameTwo.Name = "BotHubFrameTwo"
+BotHubFrameTwo.Parent = BotHubFrame
+BotHubFrameTwo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BotHubFrameTwo.BackgroundTransparency = 1.000
+BotHubFrameTwo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BotHubFrameTwo.BorderSizePixel = 0
+BotHubFrameTwo.Size = UDim2.new(1, 0, 1, 0)
+
+bar.Name = "bar"
+bar.Parent = BotHubFrameTwo
+bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bar.BackgroundTransparency = 1.000
+bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bar.BorderSizePixel = 0
+bar.Size = UDim2.new(1, 0, 0.0645480305, 0)
+bar.Font = Enum.Font.SourceSans
+bar.Text = ""
+bar.TextColor3 = Color3.fromRGB(0, 0, 0)
+bar.TextSize = 14.000
+
+BotHub.Name = "BotHub"
+BotHub.Parent = BotHubFrameTwo
+BotHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BotHub.BackgroundTransparency = 1.000
+BotHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BotHub.BorderSizePixel = 0
+BotHub.Position = UDim2.new(0.0199999996, 0, 0.00499999989, 0)
+BotHub.Size = UDim2.new(0.135424688, 0, 0.0572740063, 0)
+BotHub.Font = Enum.Font.SourceSans
+BotHub.Text = "พี่เฟิร์ส จัดให้"
+BotHub.TextColor3 = Color3.fromRGB(200, 200, 200)
+BotHub.TextScaled = true
+BotHub.TextSize = 14.000
+BotHub.TextWrapped = true
+BotHub.TextXAlignment = Enum.TextXAlignment.Left
+
+BotHub_2.Name = "BotHub"
+BotHub_2.Parent = BotHub
+BotHub_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BotHub_2.BackgroundTransparency = 1.000
+BotHub_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BotHub_2.BorderSizePixel = 0
+BotHub_2.Position = UDim2.new(0.994722247, 0, 0.156332403, 0)
+BotHub_2.Size = UDim2.new(1.62162018, 0, 0.800000072, 0)
+BotHub_2.Font = Enum.Font.SourceSans
+BotHub_2.Text = " by script พี่เฟิร์ส จัดให้"
+BotHub_2.TextColor3 = Color3.fromRGB(180, 180, 180)
+BotHub_2.TextScaled = true
+BotHub_2.TextSize = 14.000
+BotHub_2.TextWrapped = true
+BotHub_2.TextXAlignment = Enum.TextXAlignment.Left
+
+MainFrameScript.Name = "MainFrameScript"
+MainFrameScript.Parent = BotHubFrameTwo
+MainFrameScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrameScript.BackgroundTransparency = 1.000
+MainFrameScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrameScript.BorderSizePixel = 0
+MainFrameScript.Position = UDim2.new(0.0220359843, 0, 0.103013195, 0)
+MainFrameScript.Size = UDim2.new(0.214030951, 0, 0.774736047, 0)
+
+Main.Name = "Main"
+Main.Parent = MainFrameScript
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 0.900
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+MainButton.Name = "MainButton"
+MainButton.Parent = Main
+MainButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.BackgroundTransparency = 1.000
+MainButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.BorderSizePixel = 0
+MainButton.Size = UDim2.new(1, 0, 1, 0)
+MainButton.Font = Enum.Font.SourceSans
+MainButton.Text = ""
+MainButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.TextSize = 14.000
+
+MainText.Name = "MainText"
+MainText.Parent = Main
+MainText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainText.BackgroundTransparency = 1.000
+MainText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainText.BorderSizePixel = 0
+MainText.Position = UDim2.new(0.0939792916, 0, 0.164707005, 0)
+MainText.Size = UDim2.new(0.800000012, 0, 0.668234408, 0)
+MainText.Font = Enum.Font.SourceSans
+MainText.Text = "| Main"
+MainText.TextColor3 = Color3.fromRGB(200, 200, 200)
+MainText.TextScaled = true
+MainText.TextSize = 14.000
+MainText.TextWrapped = true
+MainText.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner.Name = "MainCorner"
+MainCorner.Parent = Main
+
+First.Name = "First"
+First.Parent = MainFrameScript
+First.SortOrder = Enum.SortOrder.LayoutOrder
+First.Padding = UDim.new(0, 5)
+
+Map.Name = "Map"
+Map.Parent = MainFrameScript
+Map.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Map.BackgroundTransparency = 1.000
+Map.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Map.BorderSizePixel = 0
+Map.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+MapButton.Name = "MapButton"
+MapButton.Parent = Map
+MapButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MapButton.BackgroundTransparency = 1.000
+MapButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MapButton.BorderSizePixel = 0
+MapButton.Size = UDim2.new(1, 0, 1, 0)
+MapButton.Font = Enum.Font.SourceSans
+MapButton.Text = ""
+MapButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MapButton.TextSize = 14.000
+
+MapText.Name = "MapText"
+MapText.Parent = Map
+MapText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MapText.BackgroundTransparency = 1.000
+MapText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MapText.BorderSizePixel = 0
+MapText.Position = UDim2.new(0.0939792916, 0, 0.164707005, 0)
+MapText.Size = UDim2.new(0.800000012, 0, 0.668234408, 0)
+MapText.Font = Enum.Font.SourceSans
+MapText.Text = "| Map"
+MapText.TextColor3 = Color3.fromRGB(200, 200, 200)
+MapText.TextScaled = true
+MapText.TextSize = 14.000
+MapText.TextWrapped = true
+MapText.TextXAlignment = Enum.TextXAlignment.Left
+
+FischCorner.CornerRadius = UDim.new(0.200000003, 0)
+FischCorner.Name = "FischCorner"
+FischCorner.Parent = Map
+
+TextLabel.Parent = Map
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = ""
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+Setting.Name = "Setting"
+Setting.Parent = MainFrameScript
+Setting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Setting.BackgroundTransparency = 1.000
+Setting.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Setting.BorderSizePixel = 0
+Setting.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+SettingButton.Name = "SettingButton"
+SettingButton.Parent = Setting
+SettingButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingButton.BackgroundTransparency = 1.000
+SettingButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingButton.BorderSizePixel = 0
+SettingButton.Size = UDim2.new(1, 0, 1, 0)
+SettingButton.Font = Enum.Font.SourceSans
+SettingButton.Text = ""
+SettingButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SettingButton.TextSize = 14.000
+
+SettingText.Name = "SettingText"
+SettingText.Parent = Setting
+SettingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingText.BackgroundTransparency = 1.000
+SettingText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingText.BorderSizePixel = 0
+SettingText.Position = UDim2.new(0.0939792916, 0, 0.164707005, 0)
+SettingText.Size = UDim2.new(0.800000012, 0, 0.668234408, 0)
+SettingText.Font = Enum.Font.SourceSans
+SettingText.Text = "| Setting"
+SettingText.TextColor3 = Color3.fromRGB(200, 200, 200)
+SettingText.TextScaled = true
+SettingText.TextSize = 14.000
+SettingText.TextWrapped = true
+SettingText.TextXAlignment = Enum.TextXAlignment.Left
+
+settingCorner.CornerRadius = UDim.new(0.200000003, 0)
+settingCorner.Name = "settingCorner"
+settingCorner.Parent = Setting
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = BotHubFrameTwo
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.266301036, 0, 0.103013195, 0)
+MainFrame.Size = UDim2.new(0.700437069, 0, 0.774736047, 0)
+
+UIListLayout.Parent = MainFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 5)
+
+BarFram.Name = "BarFram"
+BarFram.Parent = MainFrame
+BarFram.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BarFram.BackgroundTransparency = 0.900
+BarFram.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BarFram.BorderSizePixel = 0
+BarFram.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar.Name = "Mainbar"
+Mainbar.Parent = BarFram
+Mainbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar.BackgroundTransparency = 1.000
+Mainbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar.BorderSizePixel = 0
+Mainbar.Position = UDim2.new(0, 0, 0.159999996, 0)
+Mainbar.Size = UDim2.new(1.00000012, 0, 0.668234408, 0)
+Mainbar.Font = Enum.Font.SourceSans
+Mainbar.Text = "Fram"
+Mainbar.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar.TextScaled = true
+Mainbar.TextSize = 14.000
+Mainbar.TextWrapped = true
+
+MainCorner_2.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_2.Name = "MainCorner"
+MainCorner_2.Parent = BarFram
+
+AutoFramFisch.Name = "AutoFramFisch"
+AutoFramFisch.Parent = MainFrame
+AutoFramFisch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFramFisch.BackgroundTransparency = 0.900
+AutoFramFisch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoFramFisch.BorderSizePixel = 0
+AutoFramFisch.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar_2.Name = "Mainbar"
+Mainbar_2.Parent = AutoFramFisch
+Mainbar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_2.BackgroundTransparency = 1.000
+Mainbar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_2.BorderSizePixel = 0
+Mainbar_2.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+Mainbar_2.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+Mainbar_2.Font = Enum.Font.SourceSans
+Mainbar_2.Text = "Auto Fram Fisch"
+Mainbar_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_2.TextScaled = true
+Mainbar_2.TextSize = 14.000
+Mainbar_2.TextWrapped = true
+Mainbar_2.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_3.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_3.Name = "MainCorner"
+MainCorner_3.Parent = AutoFramFisch
+
+FrameAutoFram.Name = "FrameAutoFram"
+FrameAutoFram.Parent = AutoFramFisch
+FrameAutoFram.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAutoFram.BackgroundTransparency = 1.000
+FrameAutoFram.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAutoFram.BorderSizePixel = 0
+FrameAutoFram.Position = UDim2.new(0.905235469, 0, 0.126335397, 0)
+FrameAutoFram.Size = UDim2.new(0.0601428151, 0, 0.712038815, 0)
+
+ButtonAutoFramLevel.Name = "ButtonAutoFramLevel"
+ButtonAutoFramLevel.Parent = FrameAutoFram
+ButtonAutoFramLevel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonAutoFramLevel.BackgroundTransparency = 1.000
+ButtonAutoFramLevel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutoFramLevel.BorderSizePixel = 0
+ButtonAutoFramLevel.Size = UDim2.new(1, 0, 1, 0)
+ButtonAutoFramLevel.Font = Enum.Font.SourceSans
+ButtonAutoFramLevel.Text = ""
+ButtonAutoFramLevel.TextColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutoFramLevel.TextSize = 14.000
+
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = FrameAutoFram
+
+FrameTwoAutoFram.Name = "FrameTwoAutoFram"
+FrameTwoAutoFram.Parent = FrameAutoFram
+FrameTwoAutoFram.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+FrameTwoAutoFram.BackgroundTransparency = 1.000
+FrameTwoAutoFram.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameTwoAutoFram.BorderSizePixel = 0
+FrameTwoAutoFram.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner_2.CornerRadius = UDim.new(1, 0)
+UICorner_2.Parent = FrameTwoAutoFram
+
+AutoFramLabel.Name = "AutoFramLabel"
+AutoFramLabel.Parent = FrameTwoAutoFram
+AutoFramLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutoFramLabel.BackgroundTransparency = 1.000
+AutoFramLabel.BorderColor3 = Color3.fromRGB(0, 255, 0)
+AutoFramLabel.BorderSizePixel = 0
+AutoFramLabel.Size = UDim2.new(1, 0, 1, 0)
+AutoFramLabel.ZIndex = 2
+AutoFramLabel.Font = Enum.Font.SourceSans
+AutoFramLabel.Text = ""
+AutoFramLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoFramLabel.TextSize = 14.000
+
+UICorner_3.CornerRadius = UDim.new(1, 0)
+UICorner_3.Parent = AutoFramLabel
+
+AutoShake.Name = "AutoShake"
+AutoShake.Parent = MainFrame
+AutoShake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoShake.BackgroundTransparency = 0.900
+AutoShake.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoShake.BorderSizePixel = 0
+AutoShake.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar_3.Name = "Mainbar"
+Mainbar_3.Parent = AutoShake
+Mainbar_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_3.BackgroundTransparency = 1.000
+Mainbar_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_3.BorderSizePixel = 0
+Mainbar_3.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+Mainbar_3.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+Mainbar_3.Font = Enum.Font.SourceSans
+Mainbar_3.Text = "Auto Shake"
+Mainbar_3.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_3.TextScaled = true
+Mainbar_3.TextSize = 14.000
+Mainbar_3.TextWrapped = true
+Mainbar_3.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_4.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_4.Name = "MainCorner"
+MainCorner_4.Parent = AutoShake
+
+FrameAutoShake.Name = "FrameAutoShake"
+FrameAutoShake.Parent = AutoShake
+FrameAutoShake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAutoShake.BackgroundTransparency = 1.000
+FrameAutoShake.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAutoShake.BorderSizePixel = 0
+FrameAutoShake.Position = UDim2.new(0.905235469, 0, 0.126335397, 0)
+FrameAutoShake.Size = UDim2.new(0.0601428151, 0, 0.712038815, 0)
+
+ButtonAutoShake.Name = "ButtonAutoShake"
+ButtonAutoShake.Parent = FrameAutoShake
+ButtonAutoShake.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonAutoShake.BackgroundTransparency = 1.000
+ButtonAutoShake.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutoShake.BorderSizePixel = 0
+ButtonAutoShake.Size = UDim2.new(1, 0, 1, 0)
+ButtonAutoShake.Font = Enum.Font.SourceSans
+ButtonAutoShake.Text = ""
+ButtonAutoShake.TextColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutoShake.TextSize = 14.000
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = FrameAutoShake
+
+FrameTwoAutoShake.Name = "FrameTwoAutoShake"
+FrameTwoAutoShake.Parent = FrameAutoShake
+FrameTwoAutoShake.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+FrameTwoAutoShake.BackgroundTransparency = 1.000
+FrameTwoAutoShake.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameTwoAutoShake.BorderSizePixel = 0
+FrameTwoAutoShake.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = FrameTwoAutoShake
+
+AutoShakeLabel.Name = "AutoShakeLabel"
+AutoShakeLabel.Parent = FrameTwoAutoShake
+AutoShakeLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutoShakeLabel.BackgroundTransparency = 1.000
+AutoShakeLabel.BorderColor3 = Color3.fromRGB(0, 255, 0)
+AutoShakeLabel.BorderSizePixel = 0
+AutoShakeLabel.Size = UDim2.new(1, 0, 1, 0)
+AutoShakeLabel.ZIndex = 2
+AutoShakeLabel.Font = Enum.Font.SourceSans
+AutoShakeLabel.Text = ""
+AutoShakeLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoShakeLabel.TextSize = 14.000
+
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = AutoShakeLabel
+
+AutoFramEven.Name = "AutoFramEven"
+AutoFramEven.Parent = MainFrame
+AutoFramEven.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoFramEven.BackgroundTransparency = 0.900
+AutoFramEven.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoFramEven.BorderSizePixel = 0
+AutoFramEven.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar_4.Name = "Mainbar"
+Mainbar_4.Parent = AutoFramEven
+Mainbar_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_4.BackgroundTransparency = 1.000
+Mainbar_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_4.BorderSizePixel = 0
+Mainbar_4.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+Mainbar_4.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+Mainbar_4.Font = Enum.Font.SourceSans
+Mainbar_4.Text = "Auto Fram Even"
+Mainbar_4.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_4.TextScaled = true
+Mainbar_4.TextSize = 14.000
+Mainbar_4.TextWrapped = true
+Mainbar_4.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_5.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_5.Name = "MainCorner"
+MainCorner_5.Parent = AutoFramEven
+
+FrameAutoFramEven.Name = "FrameAutoFramEven"
+FrameAutoFramEven.Parent = AutoFramEven
+FrameAutoFramEven.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAutoFramEven.BackgroundTransparency = 1.000
+FrameAutoFramEven.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAutoFramEven.BorderSizePixel = 0
+FrameAutoFramEven.Position = UDim2.new(0.905235469, 0, 0.126335397, 0)
+FrameAutoFramEven.Size = UDim2.new(0.0601428151, 0, 0.712038815, 0)
+
+ButtonAutoFramLevel_2.Name = "ButtonAutoFramLevel"
+ButtonAutoFramLevel_2.Parent = FrameAutoFramEven
+ButtonAutoFramLevel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonAutoFramLevel_2.BackgroundTransparency = 1.000
+ButtonAutoFramLevel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutoFramLevel_2.BorderSizePixel = 0
+ButtonAutoFramLevel_2.Size = UDim2.new(1, 0, 1, 0)
+ButtonAutoFramLevel_2.Font = Enum.Font.SourceSans
+ButtonAutoFramLevel_2.Text = ""
+ButtonAutoFramLevel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutoFramLevel_2.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(1, 0)
+UICorner_7.Parent = FrameAutoFramEven
+
+FrameTwoAutoFramEven.Name = "FrameTwoAutoFramEven"
+FrameTwoAutoFramEven.Parent = FrameAutoFramEven
+FrameTwoAutoFramEven.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+FrameTwoAutoFramEven.BackgroundTransparency = 1.000
+FrameTwoAutoFramEven.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameTwoAutoFramEven.BorderSizePixel = 0
+FrameTwoAutoFramEven.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = FrameTwoAutoFramEven
+
+AutoFramLabel_2.Name = "AutoFramLabel"
+AutoFramLabel_2.Parent = FrameTwoAutoFramEven
+AutoFramLabel_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutoFramLabel_2.BackgroundTransparency = 1.000
+AutoFramLabel_2.BorderColor3 = Color3.fromRGB(0, 255, 0)
+AutoFramLabel_2.BorderSizePixel = 0
+AutoFramLabel_2.Size = UDim2.new(1, 0, 1, 0)
+AutoFramLabel_2.ZIndex = 2
+AutoFramLabel_2.Font = Enum.Font.SourceSans
+AutoFramLabel_2.Text = ""
+AutoFramLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoFramLabel_2.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(1, 0)
+UICorner_9.Parent = AutoFramLabel_2
+
+Autogoto.Name = "Autogoto"
+Autogoto.Parent = MainFrame
+Autogoto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autogoto.BackgroundTransparency = 0.900
+Autogoto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Autogoto.BorderSizePixel = 0
+Autogoto.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar_5.Name = "Mainbar"
+Mainbar_5.Parent = Autogoto
+Mainbar_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_5.BackgroundTransparency = 1.000
+Mainbar_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_5.BorderSizePixel = 0
+Mainbar_5.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+Mainbar_5.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+Mainbar_5.Font = Enum.Font.SourceSans
+Mainbar_5.Text = "Auto Go To Set Position"
+Mainbar_5.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_5.TextScaled = true
+Mainbar_5.TextSize = 14.000
+Mainbar_5.TextWrapped = true
+Mainbar_5.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_6.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_6.Name = "MainCorner"
+MainCorner_6.Parent = Autogoto
+
+Autotodet.Name = "Autotodet"
+Autotodet.Parent = Autogoto
+Autotodet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Autotodet.BackgroundTransparency = 1.000
+Autotodet.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Autotodet.BorderSizePixel = 0
+Autotodet.Position = UDim2.new(0.905235469, 0, 0.126335397, 0)
+Autotodet.Size = UDim2.new(0.0601428151, 0, 0.712038815, 0)
+
+ButtonAutogotoLevel.Name = "ButtonAutogotoLevel"
+ButtonAutogotoLevel.Parent = Autotodet
+ButtonAutogotoLevel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonAutogotoLevel.BackgroundTransparency = 1.000
+ButtonAutogotoLevel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutogotoLevel.BorderSizePixel = 0
+ButtonAutogotoLevel.Size = UDim2.new(1, 0, 1, 0)
+ButtonAutogotoLevel.Font = Enum.Font.SourceSans
+ButtonAutogotoLevel.Text = ""
+ButtonAutogotoLevel.TextColor3 = Color3.fromRGB(0, 0, 0)
+ButtonAutogotoLevel.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(1, 0)
+UICorner_10.Parent = Autotodet
+
+FrameTwoAutogaoto.Name = "FrameTwoAutogaoto"
+FrameTwoAutogaoto.Parent = Autotodet
+FrameTwoAutogaoto.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+FrameTwoAutogaoto.BackgroundTransparency = 1.000
+FrameTwoAutogaoto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameTwoAutogaoto.BorderSizePixel = 0
+FrameTwoAutogaoto.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = FrameTwoAutogaoto
+
+AutogotoLabel.Name = "AutogotoLabel"
+AutogotoLabel.Parent = FrameTwoAutogaoto
+AutogotoLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutogotoLabel.BackgroundTransparency = 1.000
+AutogotoLabel.BorderColor3 = Color3.fromRGB(0, 255, 0)
+AutogotoLabel.BorderSizePixel = 0
+AutogotoLabel.Size = UDim2.new(1, 0, 1, 0)
+AutogotoLabel.ZIndex = 2
+AutogotoLabel.Font = Enum.Font.SourceSans
+AutogotoLabel.Text = ""
+AutogotoLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutogotoLabel.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(1, 0)
+UICorner_12.Parent = AutogotoLabel
+
+SetPos.Name = "SetPos"
+SetPos.Parent = MainFrame
+SetPos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetPos.BackgroundTransparency = 0.900
+SetPos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SetPos.BorderSizePixel = 0
+SetPos.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar_6.Name = "Mainbar"
+Mainbar_6.Parent = SetPos
+Mainbar_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_6.BackgroundTransparency = 1.000
+Mainbar_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_6.BorderSizePixel = 0
+Mainbar_6.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+Mainbar_6.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+Mainbar_6.Font = Enum.Font.SourceSans
+Mainbar_6.Text = "Set Position"
+Mainbar_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_6.TextScaled = true
+Mainbar_6.TextSize = 14.000
+Mainbar_6.TextWrapped = true
+Mainbar_6.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_7.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_7.Name = "MainCorner"
+MainCorner_7.Parent = SetPos
+
+SetPosButton.Name = "SetPosButton"
+SetPosButton.Parent = SetPos
+SetPosButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetPosButton.BackgroundTransparency = 1.000
+SetPosButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SetPosButton.BorderSizePixel = 0
+SetPosButton.Size = UDim2.new(1, 0, 1, 0)
+SetPosButton.Font = Enum.Font.SourceSans
+SetPosButton.Text = ""
+SetPosButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SetPosButton.TextSize = 14.000
+
+MapFrame.Name = "MapFrame"
+MapFrame.Parent = BotHubFrameTwo
+MapFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MapFrame.BackgroundTransparency = 1.000
+MapFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MapFrame.BorderSizePixel = 0
+MapFrame.Position = UDim2.new(0.266301036, 0, 0.103013195, 0)
+MapFrame.Size = UDim2.new(0.700437069, 0, 0.774736047, 0)
+MapFrame.Visible = false
+
+UIListLayout_2.Parent = MapFrame
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 5)
+
+Teleport.Name = "Teleport"
+Teleport.Parent = MapFrame
+Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.BackgroundTransparency = 0.900
+Teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.BorderSizePixel = 0
+Teleport.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar_7.Name = "Mainbar"
+Mainbar_7.Parent = Teleport
+Mainbar_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_7.BackgroundTransparency = 1.000
+Mainbar_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_7.BorderSizePixel = 0
+Mainbar_7.Position = UDim2.new(0, 0, 0.159999996, 0)
+Mainbar_7.Size = UDim2.new(1.00000012, 0, 0.668234408, 0)
+Mainbar_7.Font = Enum.Font.SourceSans
+Mainbar_7.Text = "Teleport"
+Mainbar_7.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_7.TextScaled = true
+Mainbar_7.TextSize = 14.000
+Mainbar_7.TextWrapped = true
+
+MainCorner_8.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_8.Name = "MainCorner"
+MainCorner_8.Parent = Teleport
+
+Land.Name = "Land"
+Land.Parent = MapFrame
+Land.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Land.BackgroundTransparency = 0.900
+Land.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Land.BorderSizePixel = 0
+Land.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+landbar.Name = "landbar"
+landbar.Parent = Land
+landbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+landbar.BackgroundTransparency = 1.000
+landbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+landbar.BorderSizePixel = 0
+landbar.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+landbar.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+landbar.Font = Enum.Font.SourceSans
+landbar.Text = "Island : "
+landbar.TextColor3 = Color3.fromRGB(200, 200, 200)
+landbar.TextScaled = true
+landbar.TextSize = 14.000
+landbar.TextWrapped = true
+landbar.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_9.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_9.Name = "MainCorner"
+MainCorner_9.Parent = Land
+
+Frameland.Name = "Frameland"
+Frameland.Parent = Land
+Frameland.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frameland.BackgroundTransparency = 1.000
+Frameland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frameland.BorderSizePixel = 0
+Frameland.Position = UDim2.new(0.905235469, 0, 0.126335397, 0)
+Frameland.Size = UDim2.new(0.0601428151, 0, 0.712038815, 0)
+
+openorcleseMap.Name = "openorcleseMap"
+openorcleseMap.Parent = Frameland
+openorcleseMap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openorcleseMap.BackgroundTransparency = 1.000
+openorcleseMap.BorderColor3 = Color3.fromRGB(0, 0, 0)
+openorcleseMap.BorderSizePixel = 0
+openorcleseMap.Size = UDim2.new(1, 0, 1, 0)
+openorcleseMap.Font = Enum.Font.SourceSans
+openorcleseMap.Text = ""
+openorcleseMap.TextColor3 = Color3.fromRGB(0, 0, 0)
+openorcleseMap.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = Frameland
+
+Frame.Parent = Frameland
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(1, 0, 1, 0)
+
+UICorner_14.CornerRadius = UDim.new(1, 0)
+UICorner_14.Parent = Frame
+
+keyMap.Name = "keyMap"
+keyMap.Parent = Frame
+keyMap.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+keyMap.BackgroundTransparency = 1.000
+keyMap.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keyMap.BorderSizePixel = 0
+keyMap.Size = UDim2.new(1, 0, 1, 0)
+keyMap.ZIndex = 2
+keyMap.Font = Enum.Font.SourceSans
+keyMap.Text = "+"
+keyMap.TextColor3 = Color3.fromRGB(200, 200, 200)
+keyMap.TextScaled = true
+keyMap.TextSize = 14.000
+keyMap.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(1, 0)
+UICorner_15.Parent = keyMap
+
+landdowdaw.Name = "landdowdaw"
+landdowdaw.Parent = MapFrame
+landdowdaw.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+landdowdaw.BackgroundTransparency = 0.900
+landdowdaw.BorderColor3 = Color3.fromRGB(0, 0, 0)
+landdowdaw.BorderSizePixel = 0
+landdowdaw.Position = UDim2.new(1.00028295e-07, 0, 0.239310995, 0)
+landdowdaw.Size = UDim2.new(0.999999881, 0, 0.385471284, 0)
+landdowdaw.Visible = false
+
+Mainbar_8.Name = "Mainbar"
+Mainbar_8.Parent = landdowdaw
+Mainbar_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_8.BackgroundTransparency = 1.000
+Mainbar_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_8.BorderSizePixel = 0
+Mainbar_8.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+Mainbar_8.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+Mainbar_8.Font = Enum.Font.SourceSans
+Mainbar_8.Text = ""
+Mainbar_8.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_8.TextScaled = true
+Mainbar_8.TextSize = 14.000
+Mainbar_8.TextWrapped = true
+Mainbar_8.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_10.CornerRadius = UDim.new(0.0500000007, 0)
+MainCorner_10.Name = "MainCorner"
+MainCorner_10.Parent = landdowdaw
+
+Moosewood.Name = "Moosewood"
+Moosewood.Parent = landdowdaw
+Moosewood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Moosewood.BackgroundTransparency = 0.800
+Moosewood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Moosewood.BorderSizePixel = 0
+Moosewood.Position = UDim2.new(0.0458881855, 0, 0.109934039, 0)
+Moosewood.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+Moosewood_2.Name = "Moosewood"
+Moosewood_2.Parent = Moosewood
+Moosewood_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Moosewood_2.BackgroundTransparency = 1.000
+Moosewood_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Moosewood_2.BorderSizePixel = 0
+Moosewood_2.Size = UDim2.new(1, 0, 1, 0)
+Moosewood_2.Font = Enum.Font.SourceSans
+Moosewood_2.Text = ""
+Moosewood_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Moosewood_2.TextSize = 14.000
+
+TextLabel_2.Parent = Moosewood
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Moosewood"
+TextLabel_2.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_16.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = Moosewood
+
+Snowcap.Name = "Snowcap"
+Snowcap.Parent = landdowdaw
+Snowcap.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Snowcap.BackgroundTransparency = 0.800
+Snowcap.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Snowcap.BorderSizePixel = 0
+Snowcap.Position = UDim2.new(0.278606951, 0, 0.109934039, 0)
+Snowcap.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+TextLabel_3.Parent = Snowcap
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_3.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Snowcap"
+TextLabel_3.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+SnowcapIsland.Name = "Snowcap Island"
+SnowcapIsland.Parent = Snowcap
+SnowcapIsland.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SnowcapIsland.BackgroundTransparency = 1.000
+SnowcapIsland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SnowcapIsland.BorderSizePixel = 0
+SnowcapIsland.Size = UDim2.new(1, 0, 1, 0)
+SnowcapIsland.Font = Enum.Font.SourceSans
+SnowcapIsland.Text = ""
+SnowcapIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+SnowcapIsland.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = Snowcap
+
+Terrapin.Name = "Terrapin"
+Terrapin.Parent = landdowdaw
+Terrapin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Terrapin.BackgroundTransparency = 0.800
+Terrapin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Terrapin.BorderSizePixel = 0
+Terrapin.Position = UDim2.new(0.517881036, 0, 0.109934039, 0)
+Terrapin.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+TextLabel_4.Parent = Terrapin
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_4.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Werrapin"
+TextLabel_4.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TerrapinIsland.Name = "Terrapin Island"
+TerrapinIsland.Parent = Terrapin
+TerrapinIsland.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TerrapinIsland.BackgroundTransparency = 1.000
+TerrapinIsland.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TerrapinIsland.BorderSizePixel = 0
+TerrapinIsland.Size = UDim2.new(1, 0, 1, 0)
+TerrapinIsland.Font = Enum.Font.SourceSans
+TerrapinIsland.Text = ""
+TerrapinIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+TerrapinIsland.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(1, 0)
+UICorner_18.Parent = Terrapin
+
+Forsaken.Name = "Forsaken"
+Forsaken.Parent = landdowdaw
+Forsaken.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Forsaken.BackgroundTransparency = 0.800
+Forsaken.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Forsaken.BorderSizePixel = 0
+Forsaken.Position = UDim2.new(0.750599742, 0, 0.109934039, 0)
+Forsaken.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+TextLabel_5.Parent = Forsaken
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_5.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Forsaken"
+TextLabel_5.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+ForsakenShores.Name = "Forsaken Shores"
+ForsakenShores.Parent = Forsaken
+ForsakenShores.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ForsakenShores.BackgroundTransparency = 1.000
+ForsakenShores.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ForsakenShores.BorderSizePixel = 0
+ForsakenShores.Size = UDim2.new(1, 0, 1, 0)
+ForsakenShores.Font = Enum.Font.SourceSans
+ForsakenShores.Text = ""
+ForsakenShores.TextColor3 = Color3.fromRGB(0, 0, 0)
+ForsakenShores.TextSize = 14.000
+
+UICorner_19.CornerRadius = UDim.new(1, 0)
+UICorner_19.Parent = Forsaken
+
+Roslit.Name = "Roslit"
+Roslit.Parent = landdowdaw
+Roslit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Roslit.BackgroundTransparency = 0.800
+Roslit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Roslit.BorderSizePixel = 0
+Roslit.Position = UDim2.new(0.0458881855, 0, 0.399760157, 0)
+Roslit.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+TextLabel_6.Parent = Roslit
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_6.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Roslit"
+TextLabel_6.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+RoslitBay.Name = "Roslit Bay"
+RoslitBay.Parent = Roslit
+RoslitBay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RoslitBay.BackgroundTransparency = 1.000
+RoslitBay.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RoslitBay.BorderSizePixel = 0
+RoslitBay.Size = UDim2.new(1, 0, 1, 0)
+RoslitBay.Font = Enum.Font.SourceSans
+RoslitBay.Text = ""
+RoslitBay.TextColor3 = Color3.fromRGB(0, 0, 0)
+RoslitBay.TextSize = 14.000
+
+UICorner_20.CornerRadius = UDim.new(1, 0)
+UICorner_20.Parent = Roslit
+
+Sunstone.Name = "Sunstone"
+Sunstone.Parent = landdowdaw
+Sunstone.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sunstone.BackgroundTransparency = 0.800
+Sunstone.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sunstone.BorderSizePixel = 0
+Sunstone.Position = UDim2.new(0.278606951, 0, 0.399760157, 0)
+Sunstone.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+TextLabel_7.Parent = Sunstone
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_7.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Sunstone"
+TextLabel_7.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+SnowcapIsland_2.Name = "Snowcap Island"
+SnowcapIsland_2.Parent = Sunstone
+SnowcapIsland_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SnowcapIsland_2.BackgroundTransparency = 1.000
+SnowcapIsland_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SnowcapIsland_2.BorderSizePixel = 0
+SnowcapIsland_2.Size = UDim2.new(1, 0, 1, 0)
+SnowcapIsland_2.Font = Enum.Font.SourceSans
+SnowcapIsland_2.Text = ""
+SnowcapIsland_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+SnowcapIsland_2.TextSize = 14.000
+
+UICorner_21.CornerRadius = UDim.new(1, 0)
+UICorner_21.Parent = Sunstone
+
+Sovereignty.Name = "Sovereignty"
+Sovereignty.Parent = landdowdaw
+Sovereignty.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sovereignty.BackgroundTransparency = 0.800
+Sovereignty.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sovereignty.BorderSizePixel = 0
+Sovereignty.Position = UDim2.new(0.517881036, 0, 0.399760157, 0)
+Sovereignty.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+TextLabel_8.Parent = Sovereignty
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0, 0, 0.100000113, 0)
+TextLabel_8.Size = UDim2.new(1.00000012, 0, 0.799999237, 0)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Sovereignty"
+TextLabel_8.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+StatueofSovereignty.Name = "Statueof Sovereignty"
+StatueofSovereignty.Parent = Sovereignty
+StatueofSovereignty.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatueofSovereignty.BackgroundTransparency = 1.000
+StatueofSovereignty.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StatueofSovereignty.BorderSizePixel = 0
+StatueofSovereignty.Size = UDim2.new(1, 0, 1, 0)
+StatueofSovereignty.Font = Enum.Font.SourceSans
+StatueofSovereignty.Text = ""
+StatueofSovereignty.TextColor3 = Color3.fromRGB(0, 0, 0)
+StatueofSovereignty.TextSize = 14.000
+
+UICorner_22.CornerRadius = UDim.new(1, 0)
+UICorner_22.Parent = Sovereignty
+
+Mushgrove.Name = "Mushgrove"
+Mushgrove.Parent = landdowdaw
+Mushgrove.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Mushgrove.BackgroundTransparency = 0.800
+Mushgrove.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mushgrove.BorderSizePixel = 0
+Mushgrove.Position = UDim2.new(0.750599742, 0, 0.399760157, 0)
+Mushgrove.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+MushgroveSwamp.Name = "Mushgrove Swamp"
+MushgroveSwamp.Parent = Mushgrove
+MushgroveSwamp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MushgroveSwamp.BackgroundTransparency = 1.000
+MushgroveSwamp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MushgroveSwamp.BorderSizePixel = 0
+MushgroveSwamp.Size = UDim2.new(1, 0, 1, 0)
+MushgroveSwamp.Font = Enum.Font.SourceSans
+MushgroveSwamp.Text = ""
+MushgroveSwamp.TextColor3 = Color3.fromRGB(0, 0, 0)
+MushgroveSwamp.TextSize = 14.000
+
+UICorner_23.CornerRadius = UDim.new(1, 0)
+UICorner_23.Parent = Mushgrove
+
+TextLabel_9.Parent = Mushgrove
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_9.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Mushgrove"
+TextLabel_9.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+Archeological.Name = "Archeological"
+Archeological.Parent = landdowdaw
+Archeological.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Archeological.BackgroundTransparency = 0.800
+Archeological.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Archeological.BorderSizePixel = 0
+Archeological.Position = UDim2.new(0.0458881855, 0, 0.699580252, 0)
+Archeological.Size = UDim2.new(0.219999999, 0, 0.200000003, 0)
+
+TextLabel_10.Parent = Archeological
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 0, 0.100000001, 0)
+TextLabel_10.Size = UDim2.new(1, 0, 0.800000012, 0)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "NewLand"
+TextLabel_10.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+ArcheologicalSite.Name = "Archeological Site"
+ArcheologicalSite.Parent = Archeological
+ArcheologicalSite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ArcheologicalSite.BackgroundTransparency = 1.000
+ArcheologicalSite.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ArcheologicalSite.BorderSizePixel = 0
+ArcheologicalSite.Size = UDim2.new(1, 0, 1, 0)
+ArcheologicalSite.Font = Enum.Font.SourceSans
+ArcheologicalSite.Text = ""
+ArcheologicalSite.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArcheologicalSite.TextSize = 14.000
+
+UICorner_24.CornerRadius = UDim.new(1, 0)
+UICorner_24.Parent = Archeological
+
+Warp.Name = "Warp"
+Warp.Parent = MapFrame
+Warp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warp.BackgroundTransparency = 0.900
+Warp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Warp.BorderSizePixel = 0
+Warp.Size = UDim2.new(1, 0, 0.100393489, 0)
+
+Mainbar_9.Name = "Mainbar"
+Mainbar_9.Parent = Warp
+Mainbar_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainbar_9.BackgroundTransparency = 1.000
+Mainbar_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Mainbar_9.BorderSizePixel = 0
+Mainbar_9.Position = UDim2.new(0.0333569124, 0, 0.160000235, 0)
+Mainbar_9.Size = UDim2.new(0.760436237, 0, 0.668234408, 0)
+Mainbar_9.Font = Enum.Font.SourceSans
+Mainbar_9.Text = "go to"
+Mainbar_9.TextColor3 = Color3.fromRGB(200, 200, 200)
+Mainbar_9.TextScaled = true
+Mainbar_9.TextSize = 14.000
+Mainbar_9.TextWrapped = true
+Mainbar_9.TextXAlignment = Enum.TextXAlignment.Left
+
+MainCorner_11.CornerRadius = UDim.new(0.200000003, 0)
+MainCorner_11.Name = "MainCorner"
+MainCorner_11.Parent = Warp
+
+SetPosButton_2.Name = "SetPosButton"
+SetPosButton_2.Parent = Warp
+SetPosButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SetPosButton_2.BackgroundTransparency = 1.000
+SetPosButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SetPosButton_2.BorderSizePixel = 0
+SetPosButton_2.Size = UDim2.new(1, 0, 1, 0)
+SetPosButton_2.Font = Enum.Font.SourceSans
+SetPosButton_2.Text = ""
+SetPosButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+SetPosButton_2.TextSize = 14.000
+
+clodeGui.Name = "clodeGui"
+clodeGui.Parent = BotHubFrameTwo
+clodeGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+clodeGui.BackgroundTransparency = 1.000
+clodeGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clodeGui.BorderSizePixel = 0
+clodeGui.Position = UDim2.new(0.948182702, 0, 0.00585440965, 0)
+clodeGui.Size = UDim2.new(0.0357164294, 0, 0.0489185676, 0)
+clodeGui.Font = Enum.Font.SourceSans
+clodeGui.Text = "X"
+clodeGui.TextColor3 = Color3.fromRGB(200, 200, 200)
+clodeGui.TextScaled = true
+clodeGui.TextSize = 14.000
+clodeGui.TextWrapped = true
+
+clode.Name = "clode"
+clode.Parent = clodeGui
+clode.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clode.BackgroundTransparency = 1.000
+clode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clode.BorderSizePixel = 0
+clode.Size = UDim2.new(1, 0, 1, 0)
+clode.Font = Enum.Font.SourceSans
+clode.Text = ""
+clode.TextColor3 = Color3.fromRGB(0, 0, 0)
+clode.TextSize = 14.000
+
+FrameCorner.CornerRadius = UDim.new(0.0199999996, 0)
+FrameCorner.Name = "FrameCorner"
+FrameCorner.Parent = BotHubFrame
+
+UIAspectRatioConstraint.Parent = BotHubFrame
+UIAspectRatioConstraint.AspectRatio = 1.440
+
+-- Scripts:
+
+local function DAQKVLI_fake_script() -- BotHubFrameTwo.LocalScript 
+	local script = Instance.new('LocalScript', BotHubFrameTwo)
+
+	local Frame = script.Parent.Parent.Parent.BotHubFrame
+	local Button = script.Parent.bar
+	local mouse = game:GetService("UserInputService")
+	local b
+	Button.MouseButton1Down:Connect(function()
+		b = (Frame.Position - UDim2.new(0, mouse:GetMouseLocation().X , 0, mouse:GetMouseLocation().Y))
+		_G.a = true
+	end)
+	Button.MouseButton1Up:Connect(function()
+		_G.a = false
+	end)
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.a then
+			Frame.Position = b + UDim2.new(0, mouse:GetMouseLocation().X , 0, mouse:GetMouseLocation().Y)
+		end
+	end)
+	
+end
+coroutine.wrap(DAQKVLI_fake_script)()
+local function ZECP_fake_script() -- MainFrameScript.LocalScript 
+	local script = Instance.new('LocalScript', MainFrameScript)
+
+	local Main = script.Parent.Main
+	local Map = script.Parent.Map
+	local Setting = script.Parent.Setting
+	-- Button
+	local MainButton = Main:FindFirstChild("MainButton")
+	local MapButton = Map:FindFirstChild("MapButton")
+	local SettingButton = Setting:FindFirstChild("SettingButton")
+	-- Script
+	MainButton.MouseButton1Click:Connect(function()
+		Main.Transparency = 0.9
+		Map.Transparency = 1
+		Setting.Transparency = 1
+		script.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.MapFrame.Visible = false
+	end)
+	MapButton.MouseButton1Click:Connect(function()
+		Map.Transparency = 0.9
+		Main.Transparency = 1
+		Setting.Transparency = 1
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.MapFrame.Visible = true
+	end)
+	SettingButton.MouseButton1Click:Connect(function()
+		Main.Transparency = 1
+		Map.Transparency = 1
+		Setting.Transparency = 0.9
+	end)
+end
+coroutine.wrap(ZECP_fake_script)()
+local function TAXNOZ_fake_script() -- FrameAutoFram.LocalScript 
+	local script = Instance.new('LocalScript', FrameAutoFram)
+
+	local AutoFram = game.PlaceId..game.Players.LocalPlayer.Name.."AutoFram"
+	local Text = script.Parent.FrameTwoAutoFram:FindFirstChild("AutoFramLabel")
+	local Uistroke = Instance.new("UIStroke",script.Parent.FrameTwoAutoFram)
+	Uistroke.Color = Color3.new(0.407843, 0.407843, 0.407843)
+	function Get_Setting(Name)
+		if isfile(Name..'_'..'.json') then
+			getgenv().Fram = game:GetService("HttpService"):JSONDecode(readfile(Name..'_'..'.json'))
+			return getgenv().Fram
+		else
+			writefile(Name..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().Fram))
+		end
+	end
+	
+	
+	spawn(function()
+		pcall(function()
+			getgenv().Fram = {
+				["AutoFram"] = false
+			}
+			Get_Setting(AutoFram)
+		end)
+	end)
+	
+	spawn(function()
+		pcall(function()
+		if Get_Setting(AutoFram).AutoFram == true then
+			Text.BackgroundTransparency = 0.5
+			getgenv().Fram.AutoFram = true
+			_G.AutoFram = true
+			end
+		end)
+	end)
+	
+	
+	script.Parent.ButtonAutoFramLevel.MouseButton1Click:Connect(function()
+		if Text.BackgroundTransparency == 1 then
+			Text.BackgroundTransparency = 0.5
+			getgenv().Fram.AutoFram = true
+			_G.AutoFram = true
+		else
+			Text.BackgroundTransparency = 1
+			getgenv().Fram.AutoFram = false
+			_G.AutoFram = false
+		end
+		writefile(AutoFram..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().Fram))
+	end)
+	function Autobet()
+		for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+			if v.ClassName == "Tool" and v.ToolTip == "fisch" then
+				game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+			end
+		end
+	end
+	-- function
+	function checktool()
+		for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+			if v.ClassName == "Tool" and v.ToolTip == "fisch" then
+				return v.Name
+			end
+		end
+	end
+	function checktools()
+		if checktool() == "" or checktool() == nil then
+			for i,v in pairs(game.Workspace[game.Players.LocalPlayer.Name]:GetChildren()) do
+				if v.ClassName == "Tool" and v.ToolTip == "fisch" then
+					return v.Name
+				end
+			end
+		else
+			return checktool()
+		end
+	end
+	spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if _G.AutoFram then
+				pcall(function()
+					Autobet()
+				end)
+			end
+		end)
+	end)
+	
+	
+	spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if _G.AutoFram then
+				pcall(function()
+					game:GetService("Players").LocalPlayer.Character:FindFirstChild(checktools()).events.cast:FireServer(100)
+					local args = {
+						[1] = 100,
+						[2] = true
+					}
+					game:GetService("ReplicatedStorage"):WaitForChild("events"):WaitForChild("reelfinished"):FireServer(unpack(args))
+					game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("reel").bar.playerbar.Position = game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("reel").bar.fish.Position
+				end)
+			end
+		end)
+	end)
+	
+end
+coroutine.wrap(TAXNOZ_fake_script)()
+local function WAROB_fake_script() -- FrameAutoShake.AutoShake 
+	local script = Instance.new('LocalScript', FrameAutoShake)
+
+	local AutoShake = game.PlaceId..game.Players.LocalPlayer.Name.."AutoShake"
+	local Text = script.Parent.FrameTwoAutoShake.AutoShakeLabel
+	local Uistroke = Instance.new("UIStroke",script.Parent.FrameTwoAutoShake)
+	Uistroke.Color = Color3.new(0.407843, 0.407843, 0.407843)
+	
+	function Get_Setting(Name)
+		if isfile(Name..'_'..'.json') then
+			getgenv().FramShake = game:GetService("HttpService"):JSONDecode(readfile(Name..'_'..'.json'))
+			return getgenv().FramShake
+		else
+			writefile(Name..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().FramShake))
+		end
+	end
+	
+	
+	spawn(function()
+		getgenv().FramShake = {
+			["AutoShake"] = false
+		}
+		Get_Setting(AutoShake)
+	end)
+	
+	spawn(function()
+		pcall(function()
+			if Get_Setting(AutoShake).AutoShake == true then
+				Text.BackgroundTransparency = 0.5
+				getgenv().FramShake.AutoShake = true
+				_G.AutoShake = true
+			end
+		end)
+	end)
+	
+	script.Parent.ButtonAutoShake.MouseButton1Click:Connect(function()
+		if Text.BackgroundTransparency == 1 then
+			Text.BackgroundTransparency = 0.5
+			getgenv().FramShake.AutoShake = true
+			_G.AutoShake = true
+		else
+			Text.BackgroundTransparency = 1
+			getgenv().FramShake.AutoShake = false
+			_G.AutoShake = false
+		end
+		writefile(AutoShake..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().FramShake))
+	end)
+	spawn(function()
+		game:GetService('Players').LocalPlayer.PlayerGui.DescendantAdded:Connect(function(Descendant)
+			if Descendant.Name == 'button' and Descendant.Parent.Name == 'safezone' and _G.AutoShake then
+				task.wait(0.21)
+				game:GetService('GuiService').SelectedObject = Descendant
+				game:GetService('VirtualInputManager'):SendKeyEvent(true, Enum.KeyCode.Return, false, game)
+				game:GetService('VirtualInputManager'):SendKeyEvent(false, Enum.KeyCode.Return, false, game)
+				task.wait(0.1)
+				game:GetService('GuiService').SelectedObject = nil
+			elseif Descendant.Name == 'playerbar' and Descendant.Parent.Name == 'bar' then
+				Descendant:GetPropertyChangedSignal('Position'):Wait()
+				game:GetService('ReplicatedStorage').events.reelfinished:FireServer(100, true)
+			end
+		end)
+	end)
+end
+coroutine.wrap(WAROB_fake_script)()
+local function PEHNKVV_fake_script() -- FrameAutoFramEven.AutoFramEven 
+	local script = Instance.new('LocalScript', FrameAutoFramEven)
+
+	local AutoFramEven = game.PlaceId..game.Players.LocalPlayer.Name.."AutoFramEven"
+	local pos = game.PlaceId..game.Players.LocalPlayer.Name.."SetPosition"
+	local Text = script.Parent.FrameTwoAutoFramEven:FindFirstChild("AutoFramLabel")
+	local Uistroke = Instance.new("UIStroke",script.Parent.FrameTwoAutoFramEven)
+	Uistroke.Color = Color3.new(0.407843, 0.407843, 0.407843)
+	
+	function Get_Setting(Name)
+		if isfile(Name..'_'..'.json') then
+			getgenv().FramEven = game:GetService("HttpService"):JSONDecode(readfile(Name..'_'..'.json'))
+			return getgenv().FramEven
+		else
+			writefile(Name..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().FramEven))
+		end
+	end
+	function Part()
+		if not workspace:FindFirstChild("Tp_Even") then
+			local part = Instance.new("Part",workspace)
+			part.Anchored = true
+			part.CFrame = CFrame.new(872.113525, -740.642822, 1243.06262, 0.0225981735, -3.07806958e-09, 0.999744654, -3.43742386e-08, 1, 3.85584897e-09, -0.999744654, -3.44525972e-08, 0.0225981735)
+			part.CanCollide = true
+			part.Name = "Tp_Evend"
+			part.Size = Vector3.new(15,1,15)
+			part.Transparency = 1
+		end
+	end
+	
+	
+	spawn(function()
+		getgenv().FramEven = {
+			["AutoFramEven"] = false
+		}
+		Get_Setting(AutoFramEven)
+	end)
+	
+	spawn(function()
+		pcall(function()
+			if Get_Setting(AutoFramEven).AutoFramEven == true then
+				Text.BackgroundTransparency = 0.5
+				getgenv().FramEven.AutoFramEven = true
+				_G.Tp_Even = true
+			end
+		end)
+	end)
+	
+	script.Parent.ButtonAutoFramLevel.MouseButton1Click:Connect(function()
+		if Text.BackgroundTransparency == 1 then
+			Text.BackgroundTransparency = 0.5
+			getgenv().FramEven.AutoFramEven = true
+			_G.Tp_Even = true
+		else
+			Text.BackgroundTransparency = 1
+			getgenv().FramEven.AutoFramEven = false
+			_G.Tp_Even = false
+		end
+		writefile(AutoFramEven..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().FramEven))
+	end)
+	spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if _G.Tp_Even then
+				pcall(function()
+					Part()
+					if workspace.zones.fishing:FindFirstChild("The Depths - Serpent") then
+						workspace:FindFirstChild("Tp_Evend").CFrame = game.Workspace.zones.fishing:FindFirstChild("The Depths - Serpent").CFrame * CFrame.new(0,0,14)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace:FindFirstChild("Tp_Evend").CFrame * CFrame.new(0,3.5,0)
+					end
+				end)
+			end
+		end)
+	end)
+end
+coroutine.wrap(PEHNKVV_fake_script)()
+local function TJGAYH_fake_script() -- Autotodet.goto 
+	local script = Instance.new('LocalScript', Autotodet)
+
+	local gotos = game.PlaceId..game.Players.LocalPlayer.Name.."AutoGoto"
+	local pos = game.PlaceId..game.Players.LocalPlayer.Name.."SetPosition"
+	local Text = script.Parent.FrameTwoAutogaoto:FindFirstChild("AutogotoLabel")
+	local Uistrokegoto = Instance.new("UIStroke",script.Parent.FrameTwoAutogaoto)
+	Uistrokegoto.Color = Color3.new(0.407843, 0.407843, 0.407843)
+	function Get_Setting(Name)
+		if isfile(Name..'_'..'.json') then
+			getgenv().goto = game:GetService("HttpService"):JSONDecode(readfile(Name..'_'..'.json'))
+			return getgenv().goto
+		else
+			writefile(Name..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().goto))
+		end
+	end
+	
+	
+	spawn(function()
+		getgenv().goto = {
+			["goto"] = false
+		}
+		Get_Setting(gotos)
+	end)
+	
+	spawn(function()
+		pcall(function()
+			if Get_Setting(gotos).goto == true then
+				Text.BackgroundTransparency = 0.5
+				getgenv().goto.goto = true
+				_G.goto = true
+			end
+		end)
+	end)
+	
+	
+	script.Parent.ButtonAutogotoLevel.MouseButton1Click:Connect(function()
+		if Text.BackgroundTransparency == 1 then
+			Text.BackgroundTransparency = 0.5
+			getgenv().Fram.goto = true
+			_G.goto = true
+		else
+			Text.BackgroundTransparency = 1
+			getgenv().Fram.goto = false
+			_G.goto = false
+		end
+		writefile(gotos..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().goto))
+	end)
+	spawn(function()
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if _G.goto and Get_Setting(pos).Pos.x ~= nil then
+				pcall(function()
+					if _G.Tp_Even then
+						if not workspace.zones.fishing:FindFirstChild("The Depths - Serpent") then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Get_Setting(pos).Pos.x,Get_Setting(pos).Pos.y,Get_Setting(pos).Pos.z,Get_Setting(pos).RightVector.x,Get_Setting(pos).UpVector.x,-(Get_Setting(pos).LookVector.x),Get_Setting(pos).RightVector.y,Get_Setting(pos).UpVector.y,-(Get_Setting(pos).LookVector.y),Get_Setting(pos).RightVector.z,Get_Setting(pos).UpVector.z,-(Get_Setting(pos).LookVector.z))
+						end	
+					else
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Get_Setting(pos).Pos.x,Get_Setting(pos).Pos.y,Get_Setting(pos).Pos.z,Get_Setting(pos).RightVector.x,Get_Setting(pos).UpVector.x,-(Get_Setting(pos).LookVector.x),Get_Setting(pos).RightVector.y,Get_Setting(pos).UpVector.y,-(Get_Setting(pos).LookVector.y),Get_Setting(pos).RightVector.z,Get_Setting(pos).UpVector.z,-(Get_Setting(pos).LookVector.z))
+					end	
+				end)
+			end
+		end)
+	end)
+end
+coroutine.wrap(TJGAYH_fake_script)()
+local function TGGGRC_fake_script() -- SetPos.setpos 
+	local script = Instance.new('LocalScript', SetPos)
+
+	local Posit = game.PlaceId..game.Players.LocalPlayer.Name.."SetPosition"
+	function Get_Setting(Name)
+		if isfile(Name..'_'..'.json') then
+			getgenv().SetPosition = game:GetService("HttpService"):JSONDecode(readfile(Name..'_'..'.json'))
+			return getgenv().SetPosition
+		else
+			writefile(Name..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().SetPosition))
+		end
+	end
+	spawn(function()
+		getgenv().SetPosition = {
+			["Pos"] = {
+				["x"] = nil,
+				["y"] = nil,
+				["z"] = nil	
+			},
+			["RightVector"] = {
+				["x"] = nil,
+				["y"] = nil,
+				["z"] = nil	
+			},
+			["UpVector"] = {
+				["x"] = nil,
+				["y"] = nil,
+				["z"] = nil	
+			},
+			["LookVector"] = {
+				["x"] = nil,
+				["y"] = nil,
+				["z"] = nil	
+			},
+	
+		}
+		Get_Setting(Posit)
+	end)
+	spawn(function()
+		script.Parent.SetPosButton.MouseButton1Click:Connect(function()
+			getgenv().SetPosition = {
+				["Pos"] = {
+					["x"] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.X,
+					["y"] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y,
+					["z"] = game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Z	
+				},
+				["RightVector"] = {
+					["x"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.RightVector.X,
+					["y"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.RightVector.Y,
+					["z"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.RightVector.Z	
+				},
+				["UpVector"] = {
+					["x"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.UpVector.X,
+					["y"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.UpVector.Y,
+					["z"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.UpVector.Z	
+				},
+				["LookVector"] = {
+					["x"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.X,
+					["y"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Y,
+					["z"] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.LookVector.Z	
+				},
+	
+			}
+			writefile(Posit..'_'..'.json',game:GetService("HttpService"):JSONEncode(getgenv().SetPosition))
+		end)
+	end)
+	
+	
+end
+coroutine.wrap(TGGGRC_fake_script)()
+local function KPBCPY_fake_script() -- Frameland.LocalScript 
+	local script = Instance.new('LocalScript', Frameland)
+
+	local Uistroke = Instance.new("UIStroke",script.Parent.Frame)
+	Uistroke.Color = Color3.new(0.407843, 0.407843, 0.407843)
+	local vis = script.Parent.Frame:FindFirstChild("keyMap")
+	script.Parent.openorcleseMap.MouseButton1Down:Connect(function()
+		if vis.Text == "+" then
+			vis.Text = "-"
+			script.Parent.Parent.Parent.landdowdaw.Visible = true
+		else
+			vis.Text = "+"
+			script.Parent.Parent.Parent.landdowdaw.Visible = false
+		end
+	end)
+end
+coroutine.wrap(KPBCPY_fake_script)()
+local function HRHXRE_fake_script() -- landdowdaw.setpos 
+	local script = Instance.new('LocalScript', landdowdaw)
+
+	
+	spawn(function()
+		script.Parent:FindFirstChildOfClass("Frame"):FindFirstChildOfClass("TextButton").MouseButton1Click:Connect(function()
+			script.Parent.Parent.Land.Frame.Frame.keyMap.Text = "+"
+		end)
+	end)
+	
+end
+coroutine.wrap(HRHXRE_fake_script)()
+local function NSUPG_fake_script() -- Moosewood_2.LocalScript 
+	local script = Instance.new('LocalScript', Moosewood_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(NSUPG_fake_script)()
+local function DWZS_fake_script() -- SnowcapIsland.LocalScript 
+	local script = Instance.new('LocalScript', SnowcapIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(DWZS_fake_script)()
+local function JRZPS_fake_script() -- TerrapinIsland.LocalScript 
+	local script = Instance.new('LocalScript', TerrapinIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(JRZPS_fake_script)()
+local function RCLFV_fake_script() -- ForsakenShores.LocalScript 
+	local script = Instance.new('LocalScript', ForsakenShores)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(RCLFV_fake_script)()
+local function QVUDCPO_fake_script() -- RoslitBay.LocalScript 
+	local script = Instance.new('LocalScript', RoslitBay)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(QVUDCPO_fake_script)()
+local function WMIQX_fake_script() -- SnowcapIsland_2.LocalScript 
+	local script = Instance.new('LocalScript', SnowcapIsland_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(WMIQX_fake_script)()
+local function TKOPST_fake_script() -- StatueofSovereignty.LocalScript 
+	local script = Instance.new('LocalScript', StatueofSovereignty)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(TKOPST_fake_script)()
+local function METV_fake_script() -- MushgroveSwamp.LocalScript 
+	local script = Instance.new('LocalScript', MushgroveSwamp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(METV_fake_script)()
+local function IVOUG_fake_script() -- ArcheologicalSite.LocalScript 
+	local script = Instance.new('LocalScript', ArcheologicalSite)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Land:FindFirstChild("landbar").Text = "Island : "..script.Parent.Name
+		script.Parent.Parent.Parent.Parent.landdowdaw.Visible = false
+		script.Parent.Parent.Parent.Parent.Land.Frameland.Frame.keyMap.Text = "+"
+	end)
+end
+coroutine.wrap(IVOUG_fake_script)()
+local function YHBC_fake_script() -- SetPosButton_2.setpos 
+	local script = Instance.new('LocalScript', SetPosButton_2)
+
+	spawn(function()
+		script.Parent.MouseButton1Click:Connect(function()
+			local text = script.Parent.Parent.Parent.Land.landbar.Text
+			if string.find(text,"Moosewood") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(390.13482666015625, 134.81103515625, 249.57086181640625)
+			elseif string.find(text,"Snowcap Island") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2704.310302734375, 171.7699432373047, 2380.51123046875)
+			elseif string.find(text,"Terrapin Island") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-191.4773406982422, 143.14602661132812, 1927.0682373046875)
+			elseif string.find(text,"Forsaken Shores") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2494.865478515625, 133.25003051757812, 1553.2960205078125)
+			elseif string.find(text,"Roslit Bay") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1449.3045654296875, 143.85153198242188, 736.7460327148438)
+			elseif string.find(text,"Sunstone Island") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-937.3826904296875, 131.59713745117188, -1106.302490234375)
+			elseif string.find(text,"Statueof Sovereignty") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(25.79960823059082, 159.01470947265625, -1037.28515625)
+			elseif string.find(text,"Mushgrove Swamp") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2494.865478515625, 133.25003051757812, 1553.2960205078125)
+			elseif string.find(text,"Archeological Site") then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,0,0)
+			end
+		end)
+	end)
+end
+coroutine.wrap(YHBC_fake_script)()
+local function WNJEJ_fake_script() -- clodeGui.LocalScript 
+	local script = Instance.new('LocalScript', clodeGui)
+
+	local use = game:FindService("UserInputService")
+	local Key = Enum.KeyCode.T
+	local par = script.Parent.Parent
+	local cd = true
+	script.Parent.clode.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Bothub:Destroy()
+	end)
+	use.InputBegan:Connect(function(p,c)
+		if c then return end
+		if p.KeyCode == Key --[[and cd]] then
+			if par.Parent.Parent.Parent.Bothub.Enabled then
+				par.Parent.BotHubFrameTwo.Visible = false
+				--par.Parent.UIAspectRatioConstraint.Parent = par.Parent.Parent.Parent.Bothub
+				--par.Parent.Parent.BotHubFrame:TweenSize(UDim2.new(0.4, 0,0, 0),1)
+				--cd = false
+				--wait(1.1)
+				--cd = true
+				par.Parent.Parent.Parent.Bothub.Enabled = false
+			else
+				par.Parent.Parent.Parent.Bothub.Enabled = true
+				--par.Parent.Parent.BotHubFrame:TweenSize(UDim2.new(0.4, 0,0.507, 0),1)
+				--cd = false
+				--wait(1.1)
+				--par.Parent.Parent.UIAspectRatioConstraint.Parent = par.Parent.Parent.BotHubFrame
+				--cd = true
+				par.Parent.BotHubFrameTwo.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(WNJEJ_fake_script)()
