@@ -1,0 +1,281 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CheckKeyGuiMain = Instance.new("ScreenGui")
+local MainGui = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local mainStrng = Instance.new("Frame")
+local Folder = Instance.new("Folder")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local FrameKey = Instance.new("Frame")
+local Key = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local CheckKey = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local keyButton = Instance.new("TextButton")
+local closeGui = Instance.new("TextButton")
+local Tweengui = Instance.new("TextButton")
+
+--Properties:
+
+CheckKeyGuiMain.Name = "CheckKeyGuiMain"
+CheckKeyGuiMain.Parent = game.CoreGui
+CheckKeyGuiMain.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainGui.Name = "MainGui"
+MainGui.Parent = CheckKeyGuiMain
+MainGui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MainGui.BackgroundTransparency = 0.350
+MainGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainGui.BorderSizePixel = 0
+MainGui.Position = UDim2.new(0.319000006, 0, 0.345999986, 0)
+MainGui.Size = UDim2.new(0, 400, 0, 200)
+
+ImageLabel.Parent = MainGui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 40, 0, 25)
+ImageLabel.Image = "rbxassetid://136982162560809"
+ImageLabel.ImageTransparency = 0.200
+
+UICorner.CornerRadius = UDim.new(0.0500000007, 0)
+UICorner.Parent = MainGui
+
+mainStrng.Name = "mainStrng"
+mainStrng.Parent = MainGui
+mainStrng.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainStrng.BackgroundTransparency = 1.000
+mainStrng.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mainStrng.BorderSizePixel = 0
+mainStrng.Position = UDim2.new(0.0474999994, 0, 0.125, 0)
+mainStrng.Size = UDim2.new(0.92750001, 0, 0.824999988, 0)
+
+Folder.Parent = mainStrng
+
+TextLabel.Parent = Folder
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0157894734, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 150, 0, 30)
+TextLabel.SizeConstraint = Enum.SizeConstraint.RelativeYY
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Security System Key"
+TextLabel.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel.TextSize = 18.000
+
+TextLabel_2.Parent = Folder
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0157894734, 0, 0.181818187, 0)
+TextLabel_2.Size = UDim2.new(0, 150, 0, 50)
+TextLabel_2.SizeConstraint = Enum.SizeConstraint.RelativeYY
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Please enter your key in the field on the right and press Enter or press the Verify Key button."
+TextLabel_2.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_2.TextSize = 13.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_3.Parent = Folder
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0157894734, 0, 0.484848499, 0)
+TextLabel_3.Size = UDim2.new(0, 150, 0, 30)
+TextLabel_3.SizeConstraint = Enum.SizeConstraint.RelativeYY
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Key security system for securing user and script keys"
+TextLabel_3.TextColor3 = Color3.fromRGB(150, 150, 150)
+TextLabel_3.TextSize = 13.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_3.TextYAlignment = Enum.TextYAlignment.Top
+
+UIListLayout.Parent = Folder
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+FrameKey.Name = "FrameKey"
+FrameKey.Parent = mainStrng
+FrameKey.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+FrameKey.BackgroundTransparency = 0.400
+FrameKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameKey.BorderSizePixel = 0
+FrameKey.Position = UDim2.new(0.55455327, 0, 0.333000034, 0)
+FrameKey.Size = UDim2.new(0, 150, 0, 40)
+
+Key.Name = "Key"
+Key.Parent = FrameKey
+Key.BackgroundColor3 = Color3.fromRGB(180, 180, 180)
+Key.BackgroundTransparency = 1.000
+Key.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Key.BorderSizePixel = 0
+Key.Position = UDim2.new(0.0666666701, 0, 0, 0)
+Key.Size = UDim2.new(0.933333337, 0, 1, 0)
+Key.ClearTextOnFocus = false
+Key.Font = Enum.Font.SourceSans
+Key.PlaceholderColor3 = Color3.fromRGB(180, 180, 180)
+Key.PlaceholderText = "Key ..."
+Key.Text = ""
+Key.TextColor3 = Color3.fromRGB(180, 180, 180)
+Key.TextSize = 15.000
+Key.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.Parent = FrameKey
+
+CheckKey.Name = "CheckKey"
+CheckKey.Parent = mainStrng
+CheckKey.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CheckKey.BackgroundTransparency = 0.500
+CheckKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CheckKey.BorderSizePixel = 0
+CheckKey.Position = UDim2.new(0.644289911, 0, 0.666666687, 0)
+CheckKey.Size = UDim2.new(0, 80, 0, 25)
+
+UICorner_3.CornerRadius = UDim.new(0.5, 0)
+UICorner_3.Parent = CheckKey
+
+keyButton.Name = "keyButton"
+keyButton.Parent = CheckKey
+keyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keyButton.BackgroundTransparency = 1.000
+keyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keyButton.BorderSizePixel = 0
+keyButton.Size = UDim2.new(1, 0, 1, 0)
+keyButton.Font = Enum.Font.SourceSans
+keyButton.Text = "Check Key"
+keyButton.TextColor3 = Color3.fromRGB(150, 150, 150)
+keyButton.TextSize = 14.000
+
+closeGui.Name = "closeGui"
+closeGui.Parent = MainGui
+closeGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closeGui.BackgroundTransparency = 1.000
+closeGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closeGui.BorderSizePixel = 0
+closeGui.Position = UDim2.new(0.936848164, 0, 0, 0)
+closeGui.Size = UDim2.new(0, 25, 0, 25)
+closeGui.Font = Enum.Font.SourceSans
+closeGui.Text = "X"
+closeGui.TextColor3 = Color3.fromRGB(150, 150, 150)
+closeGui.TextSize = 15.000
+
+Tweengui.Name = "Tweengui"
+Tweengui.Parent = MainGui
+Tweengui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tweengui.BackgroundTransparency = 1.000
+Tweengui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tweengui.BorderSizePixel = 0
+Tweengui.Position = UDim2.new(0, 0, -0.0500000007, 0)
+Tweengui.Size = UDim2.new(0.999348164, 0, 0.174999997, 0)
+Tweengui.ZIndex = -1
+Tweengui.Font = Enum.Font.SourceSans
+Tweengui.Text = ""
+Tweengui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tweengui.TextSize = 14.000
+
+-- Scripts:
+
+local function SHPC_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	script.Parent.Parent.Size = UDim2.new(0, 0,0, 0)
+	script.Parent.Parent.Position = UDim2.new(0.5, 0,0.5, 0)
+	script.Parent.Parent.BackgroundTransparency = 1
+	script.Parent.Size = UDim2.new(0, 150,0, 130)
+	script.Parent.Position = UDim2.new(0, -75,0, -65)
+	script.Parent.ImageTransparency = 1
+	script.Parent.Parent.mainStrng.Visible = false
+	script.Parent.Parent.closeGui.Visible = false
+	script.Parent.Parent.Tweengui.Visible = false
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+	local tween = tweenService:Create(script.Parent, tweenInfo, {ImageTransparency = 0.3})
+	tween:Play()
+	tween.Completed:Wait()
+	wait(2)
+	local tween = tweenService:Create(script.Parent.Parent, tweenInfo, {Size = UDim2.new(0, 400,0, 200),Position = UDim2.new(0.319, 0,0.346, 0),BackgroundTransparency = 0.35})
+	tween:Play()
+	local tween = tweenService:Create(script.Parent, tweenInfo, {Size = UDim2.new(0, 40,0, 25),Position = UDim2.new(0, 0,0, 0)})
+	tween:Play()
+	tween.Completed:Wait()
+	local tween = tweenService:Create(script.Parent, tweenInfo, {ImageTransparency = 0.3})
+	tween:Play()
+	wait(0.2)
+	script.Parent.Parent.mainStrng.Visible = true
+	script.Parent.Parent.closeGui.Visible = true
+	script.Parent.Parent.Tweengui.Visible = true
+end
+coroutine.wrap(SHPC_fake_script)()
+local function PPADNW_fake_script() -- keyButton.LocalScript 
+	local script = Instance.new('LocalScript', keyButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.FrameKey.Key.Text == "" then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/firstKaitun3434/CodeBF/refs/heads/main/MainScript'))()
+			script.Parent.Parent.Parent.Parent.Parent:Destroy()
+		end
+	end)
+end
+coroutine.wrap(PPADNW_fake_script)()
+local function GZAVPR_fake_script() -- closeGui.LocalScript 
+	local script = Instance.new('LocalScript', closeGui)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(GZAVPR_fake_script)()
+local function MZFUBFM_fake_script() -- Tweengui.LocalScript 
+	local script = Instance.new('LocalScript', Tweengui)
+
+	local Mouse = game:GetService("UserInputService")
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.07,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,0,false,0)
+	local magnitude
+	local use = game:FindService("UserInputService")
+	local Key = Enum.KeyCode.T
+	local par = script.Parent.Parent
+	use.InputBegan:Connect(function(p,c)
+		if c then return end
+		if p.KeyCode == Key --[[and cd]] then
+			if game.CoreGui:FindFirstChild("CheckKeyGuiMain") then
+				game.CoreGui:FindFirstChild("CheckKeyGuiMain"):Destroy()
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/firstKaitun3434/CodeBF/refs/heads/main/MainScript'))()
+			end
+		end
+	end)
+	script.Parent.MouseButton1Down:Connect(function()
+		_G.Tweengui = true
+		magnitude = (script.Parent.Parent.Position - UDim2.new(0, Mouse:GetMouseLocation().X , 0, Mouse:GetMouseLocation().Y))
+	end)
+	script.Parent.MouseButton1Up:Connect(function()
+		_G.Tweengui = false
+	end)
+	
+	game.Players.LocalPlayer:GetMouse().Button1Up:Connect(function()
+		_G.Tweengui = false
+	end)
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if _G.Tweengui == true then
+			print("Tweengui",_G.Tweengui)
+			local tween = tweenService:Create(script.Parent.Parent, tweenInfo, {Position = magnitude + UDim2.new(0, Mouse:GetMouseLocation().X , 0, Mouse:GetMouseLocation().Y)})
+			tween:Play()
+		end
+	end)
+	
+end
+coroutine.wrap(MZFUBFM_fake_script)()
